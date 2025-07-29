@@ -21,3 +21,7 @@ def information(request):
 
 def contacts(request):
     return render(request, 'main/contacts.html')
+
+
+def history(request):
+    return render(request, 'main/history.html')

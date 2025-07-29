@@ -29,20 +29,44 @@
             <span>"ВОЛОЖИНСКАЯ ЦЕНТРАЛЬНАЯ РАЙОННАЯ БОЛЬНИЦА"</span>
         </div>
     </div>
-
-    <nav class="main-nav">
-        <ul class="nav-list">
-            <li class="nav-item"><a href="#" class="nav-link"><i class="fas fa-home"></i> Главная</a></li>
-            <li class="nav-item"><a href="#" class="nav-link"><i class="fas fa-hospital"></i> О нас</a></li>
-            <li class="nav-item"><a href="#" class="nav-link"><i class="fas fa-stethoscope"></i> Услуги</a></li>
-            <li class="nav-item"><a href="#" class="nav-link"><i class="fa-solid fa-circle-info"></i> Информация</a></li>
-            <li class="nav-item"><a href="#" class="nav-link"><i class="fas fa-phone"></i> Контакты</a></li>
-          </ul>
-    </nav>
-</header>
+    <nav class="header-services">
+  <ul class="services-list">
+    <li class="services-item">
+      <div class="service-block">
+        <span class="service-label">Регистратура поликлиники:</span>
+        <a href="tel:80177255733" class="service-phone">
+          <i class="fa-solid fa-phone-volume"></i>
+          (801772) 55-7-33
+        </a>
+      </div>
+    </li>
+    <li class="services-item">
+      <a href="https://talon.by/policlinic/volozhin/order" class="services-link">
+        <i class="fa-solid fa-calendar-check"></i>
+        <span>Заказать талон</span>
+      </a>
+    </li>
+    <li class="services-item">
+      <a href="/" class="services-link">
+        <i class="fa-solid fa-file"></i>
+        <span>Заказать выписку</span>
+      </a>
+    </li>
+  </ul>
+</nav>
+  </header>
+  <nav class="main-nav">
+      <ul class="nav-list">
+          <li class="nav-item"><a href="{% url 'home' %}" class="nav-link"><i class="fas fa-home"></i> Главная</a></li>
+          <li class="nav-item"><a href="{% url 'about' %}" class="nav-link"><i class="fas fa-hospital"></i> О нас</a></li>
+          <li class="nav-item"><a href="{% url 'services' %}" class="nav-link"><i class="fas fa-stethoscope"></i> Услуги</a></li>
+          <li class="nav-item"><a href="{% url 'information' %}" class="nav-link"><i class="fa-solid fa-circle-info"></i> Информация</a></li>
+          <li class="nav-item"><a href="{% url 'contacts' %}" class="nav-link"><i class="fas fa-phone"></i> Контакты</a></li>
+        </ul>
+  </nav>
   <main>  
     {% block content %}
-    
+
     {% endblock %}
   </main>
   
