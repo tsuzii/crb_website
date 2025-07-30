@@ -323,3 +323,78 @@ body {
     from { opacity: 0; transform: translateY(-10px); }
     to { opacity: 1; transform: translateY(0); }
 }
+
+/* Выпадающее подменю с прокруткой */
+.nav-item.dropdown {
+    position: relative;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #17252A;
+    padding: 10px 0;
+    list-style: none;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    min-width: 220px;
+    z-index: 1000;
+    animation: fadeIn 0.3s ease forwards;
+    border-radius: 0 0 8px 8px;
+
+  /* Ограничение высоты и прокрутка */
+    max-height: 320px;
+    overflow-y: auto;
+    scrollbar-width: thin;
+    scrollbar-color: #2B7A78 transparent;
+}
+
+/* Стиль прокрутки для Chrome/WebKit */
+.dropdown-menu::-webkit-scrollbar {
+    width: 6px;
+}
+
+.dropdown-menu::-webkit-scrollbar-thumb {
+    background-color: #2B7A78;
+    border-radius: 3px;
+}
+
+.dropdown-menu::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.dropdown-menu li a {
+    display: block;
+    padding: 10px 20px;
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+    transition: background-color 0.3s;
+    white-space: nowrap;
+}
+
+.dropdown-menu li a:hover {
+    background-color: #2B7A78;
+}
+
+.nav-item.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+/* Поддержка мобильной версии — скрыть выпадающее меню */
+@media (max-width: 768px) {
+.dropdown-menu {
+    position: static;
+    display: none;
+    background: transparent;
+    box-shadow: none;
+    padding: 0;
+    max-height: none;
+    overflow: visible;
+}
+
+.nav-item.dropdown:hover .dropdown-menu {
+    display: none;
+}
+}

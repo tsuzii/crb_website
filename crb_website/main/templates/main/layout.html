@@ -90,10 +90,57 @@
   <nav class="main-nav">
       <ul class="nav-list">
           <li class="nav-item"><a href="{% url 'home' %}" class="nav-link"><i class="fas fa-home"></i> Главная</a></li>
-          <li class="nav-item"><a href="{% url 'about' %}" class="nav-link"><i class="fas fa-hospital"></i> О нас</a></li>
-          <li class="nav-item"><a href="{% url 'services' %}" class="nav-link"><i class="fas fa-stethoscope"></i> Услуги</a></li>
-          <li class="nav-item"><a href="{% url 'information' %}" class="nav-link"><i class="fa-solid fa-circle-info"></i> Информация</a></li>
-          <li class="nav-item"><a href="{% url 'contacts' %}" class="nav-link"><i class="fas fa-phone"></i> Контакты</a></li>
+          
+          <li class="nav-item dropdown">
+            <a href="{% url 'about' %}" class="nav-link"><i class="fas fa-hospital"></i> Об учреждении</a>
+            <ul class="dropdown-menu">
+              <li><a href="{% url 'about' %}">О нас</a></li>
+              <li><a href="{% url 'about_section' 'administration' %}">Администрация</a></li>
+              <li><a href="{% url 'about_section' 'departments' %}">Отделения</a></li>
+              <li><a href="{% url 'about_section' 'history' %}">История учреждения</a></li>
+              <li><a href="{% url 'about_section' 'trade_union' %}">Профсоюз</a></li>
+              <li><a href="{% url 'about_section' 'procedures' %}">Рейтинговая оценка качества услуг</a></li>
+              <li><a href="{% url 'about_section' 'procedures' %}">Административные процедуры</a></li>
+              <li><a href="{% url 'about_section' 'media' %}">СМИ о нас</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a href="{% url 'services' %}" class="nav-link"><i class="fas fa-stethoscope"></i> Услуги</a>
+            <ul class="dropdown-menu">
+              <li><a href="/">Платные медицинские услуги гражданам РБ</a></li>
+              <li><a href="/">Платные медицинские услуги иностранным гражданам</a></li>
+              <li><a href="/">Клинико-диагностическая лаборатория</a></li>
+              <li><a href="/">Кабинет УЗИ</a></li>
+              <li><a href="/">Кабинет функциональной диагностики</a></li>
+              <li><a href="/">Кабинет эндоскопический</a></li>
+              <li><a href="/">Кабинет рентгенодиагностический</a></li>
+              <li><a href="/">Кабинет компьютерной рентгеновской томографии</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a href="{% url 'information' %}" class="nav-link"><i class="fa-solid fa-circle-info"></i> Информация</a>
+            <ul class="dropdown-menu">
+              <li><a href="/">График приема специалистов</a></li>
+              <li><a href="/">Регламент прохождения комиссии на управление транспортными средствами</a></li>
+              <li><a href="/">Объявления</a></li>
+              <li><a href="/">Новости медицины</a></li>
+              <li><a href="/">Паллиативная помощь</a></li>
+              <li><a href="/">Диспансеризация</a></li>
+              <li><a href="/">Вакансии</a></li>
+              <li><a href="/">Лекарственные средства отечественных производителей</a></li>
+            </ul>
+          </li>
+          
+          <li class="nav-item dropdown">
+            <a href="{% url 'contacts' %}" class="nav-link"><i class="fas fa-phone"></i> Контакты</a>
+            <ul class="dropdown-menu">
+              <li><a href="/">Колл-центр</a></li>
+              <li><a href="/">Подразделения</a></li>
+            </ul>
+          </li>
+
           <li class="nav-item"><a href="{% url 'home' %}" class="nav-link"><i class="fa-solid fa-syringe"></i> Вакцинация</a></li>
         </ul>
   </nav>
@@ -102,6 +149,21 @@
 
     {% endblock %}
   </main>
-  
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const dropdowns = document.querySelectorAll('.nav-item.dropdown');
+
+    dropdowns.forEach(dropdown => {
+      const menu = dropdown.querySelector('.dropdown-menu');
+
+      dropdown.addEventListener('mouseenter', () => {
+        // Сброс прокрутки на верх при каждом наведении
+        if (menu) {
+          menu.scrollTop = 0;
+        }
+      });
+    });
+  });
+</script>  
 </body>
 </html>
