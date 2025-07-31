@@ -95,13 +95,15 @@
             <a href="{% url 'about' %}" class="nav-link"><i class="fas fa-hospital"></i> Об учреждении</a>
             <ul class="dropdown-menu">
               <li><a href="{% url 'about' %}">О нас</a></li>
-              <li><a href="{% url 'about_section' 'administration' %}">Администрация</a></li>
-              <li><a href="{% url 'about_section' 'departments' %}">Отделения</a></li>
               <li><a href="{% url 'about_section' 'history' %}">История учреждения</a></li>
+              <li><a href="{% url 'about_section' 'administration' %}">Администрация</a></li>
               <li><a href="{% url 'about_section' 'trade_union' %}">Профсоюз</a></li>
-              <li><a href="{% url 'about_section' 'procedures' %}">Рейтинговая оценка качества услуг</a></li>
-              <li><a href="{% url 'about_section' 'procedures' %}">Административные процедуры</a></li>
+              <li><a href="{% url 'about_section' 'specialists' %}">Специалисты</a></li>
+              <li><a href="{% url 'about_section' 'departments' %}">Отделения</a></li>
               <li><a href="{% url 'about_section' 'media' %}">СМИ о нас</a></li>
+              <li><a href="{% url 'about_section' 'procedures' %}">Административные процедуры</a></li>
+              <li><a href="{% url 'about_section' '
+rating_score' %}">Рейтинговая оценка качества услуг</a></li>
             </ul>
           </li>
 
@@ -149,21 +151,5 @@
 
     {% endblock %}
   </main>
-<script>
-  document.addEventListener('DOMContentLoaded', function () {
-    const dropdowns = document.querySelectorAll('.nav-item.dropdown');
-
-    dropdowns.forEach(dropdown => {
-      const menu = dropdown.querySelector('.dropdown-menu');
-
-      dropdown.addEventListener('mouseenter', () => {
-        // Сброс прокрутки на верх при каждом наведении
-        if (menu) {
-          menu.scrollTop = 0;
-        }
-      });
-    });
-  });
-</script>  
 </body>
 </html>

@@ -20,6 +20,7 @@ def about_section(request, section):
         'trade_union': 'about/trade_union.html',
         'procedures': 'about/procedures.html',
         'media': 'about/media.html',
+        'rating_score': 'about/rating_score.html',
     }
 
     template = templates.get(section)
@@ -39,7 +40,3 @@ def information(request):
 
 def contacts(request):
     return render(request, 'main/contacts.html')
-
-
-def history(request):
-    return render(request, 'main/history.html')

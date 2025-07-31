@@ -1,0 +1,50 @@
+.about-container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 1.05rem;
+  line-height: 1.6;
+  color: #333;
+  background-color: #fff;
+  text-align: justify;
+}
+.about-container strong{
+  color: #3F4A8A;
+}
+.about-container h1 {
+  font-size: 2.2rem;
+  font-weight: bold;
+  margin-bottom: 30px;
+  text-align: left;
+  color: #3F4A8A;
+}
+
+.about-container h2 {
+  font-size: 1.6rem;
+  font-weight: 600;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  color: #3F4A8A;
+}
+
+.about-container p {
+  margin-bottom: 20px;
+}
+
+.about-container ul {
+  list-style-type: disc;
+  padding-left: 20px;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+.about-container ul li {
+  margin-bottom: 6px;
+}
+
+.about-container ul li::marker {
+  color: #D79A4A;       /* бирюзовый цвет */
+  font-weight: bold;
+  font-size: 1.5em;     /* увеличить размер маркера на 20% */
+}
