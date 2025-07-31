@@ -113,9 +113,7 @@ body {
   padding: 5px 10px;
   border-radius: 4px;
 }
-.service-phone:hover {
-  color: #3F4A8A;
-}
+
 .service-phone i {
   font-size: 1.1em;
 }
@@ -383,3 +381,52 @@ body {
   }
 }
 
+.footer-nav {
+    background-color: #354083;
+    width: 100%;
+    padding: 200px 300px;
+    text-align: left;
+}
+
+
+.footer {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 1.05rem;
+  line-height: 1.6;
+  color: #333;
+  background-color: #fff;
+
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.social-icons {
+  display: flex;
+  gap: 15px;
+}
+
+.social-icons a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  font-size: 24px;
+  border-radius: 50%;
+  color: #333;
+  text-decoration: none;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.social-icons a:hover {
+  background-color: orange;
+  color: white;
+}
