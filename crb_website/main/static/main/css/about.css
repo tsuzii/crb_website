@@ -1,3 +1,15 @@
+.photo-img {
+  float: right; /* Обтекание справа */
+  margin: 0 0 15px 15px; /* Отступы: сверху, справа, снизу, слева */
+  max-width: 300px; /* Максимальная ширина */
+  height: auto; /* Автоматическая высота */
+  border: 1px solid #ddd; /* Рамка */
+  border-radius: 4px; /* Закруглённые углы */
+        }
+        
+        /* Очистка обтекания после последнего абзаца */
+
+
 .about-container {
   max-width: 900px;
   margin: 0 auto;
@@ -8,7 +20,18 @@
   color: #333;
   background-color: #fff;
   text-align: justify;
+  
 }
+.about-container::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.photo-img {
+    float: left;
+    margin: 0 15px 15px 0;
+}
+
 .about-container strong{
   color: #3F4A8A;
 }

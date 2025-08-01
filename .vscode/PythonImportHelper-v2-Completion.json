@@ -1,0 +1,536 @@
+[
+    {
+        "label": "os",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "os",
+        "description": "os",
+        "detail": "os",
+        "documentation": {}
+    },
+    {
+        "label": "get_asgi_application",
+        "importPath": "django.core.asgi",
+        "description": "django.core.asgi",
+        "isExtraImport": true,
+        "detail": "django.core.asgi",
+        "documentation": {}
+    },
+    {
+        "label": "config",
+        "importPath": "decouple",
+        "description": "decouple",
+        "isExtraImport": true,
+        "detail": "decouple",
+        "documentation": {}
+    },
+    {
+        "label": "Path",
+        "importPath": "pathlib",
+        "description": "pathlib",
+        "isExtraImport": true,
+        "detail": "pathlib",
+        "documentation": {}
+    },
+    {
+        "label": "admin",
+        "importPath": "django.contrib",
+        "description": "django.contrib",
+        "isExtraImport": true,
+        "detail": "django.contrib",
+        "documentation": {}
+    },
+    {
+        "label": "admin",
+        "importPath": "django.contrib",
+        "description": "django.contrib",
+        "isExtraImport": true,
+        "detail": "django.contrib",
+        "documentation": {}
+    },
+    {
+        "label": "admin",
+        "importPath": "django.contrib",
+        "description": "django.contrib",
+        "isExtraImport": true,
+        "detail": "django.contrib",
+        "documentation": {}
+    },
+    {
+        "label": "path",
+        "importPath": "django.urls",
+        "description": "django.urls",
+        "isExtraImport": true,
+        "detail": "django.urls",
+        "documentation": {}
+    },
+    {
+        "label": "include",
+        "importPath": "django.urls",
+        "description": "django.urls",
+        "isExtraImport": true,
+        "detail": "django.urls",
+        "documentation": {}
+    },
+    {
+        "label": "path",
+        "importPath": "django.urls",
+        "description": "django.urls",
+        "isExtraImport": true,
+        "detail": "django.urls",
+        "documentation": {}
+    },
+    {
+        "label": "path",
+        "importPath": "django.urls",
+        "description": "django.urls",
+        "isExtraImport": true,
+        "detail": "django.urls",
+        "documentation": {}
+    },
+    {
+        "label": "settings",
+        "importPath": "django.conf",
+        "description": "django.conf",
+        "isExtraImport": true,
+        "detail": "django.conf",
+        "documentation": {}
+    },
+    {
+        "label": "static",
+        "importPath": "django.conf.urls.static",
+        "description": "django.conf.urls.static",
+        "isExtraImport": true,
+        "detail": "django.conf.urls.static",
+        "documentation": {}
+    },
+    {
+        "label": "get_wsgi_application",
+        "importPath": "django.core.wsgi",
+        "description": "django.core.wsgi",
+        "isExtraImport": true,
+        "detail": "django.core.wsgi",
+        "documentation": {}
+    },
+    {
+        "label": "AppConfig",
+        "importPath": "django.apps",
+        "description": "django.apps",
+        "isExtraImport": true,
+        "detail": "django.apps",
+        "documentation": {}
+    },
+    {
+        "label": "AppConfig",
+        "importPath": "django.apps",
+        "description": "django.apps",
+        "isExtraImport": true,
+        "detail": "django.apps",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "TestCase",
+        "importPath": "django.test",
+        "description": "django.test",
+        "isExtraImport": true,
+        "detail": "django.test",
+        "documentation": {}
+    },
+    {
+        "label": "TestCase",
+        "importPath": "django.test",
+        "description": "django.test",
+        "isExtraImport": true,
+        "detail": "django.test",
+        "documentation": {}
+    },
+    {
+        "label": "render",
+        "importPath": "django.shortcuts",
+        "description": "django.shortcuts",
+        "isExtraImport": true,
+        "detail": "django.shortcuts",
+        "documentation": {}
+    },
+    {
+        "label": "render",
+        "importPath": "django.shortcuts",
+        "description": "django.shortcuts",
+        "isExtraImport": true,
+        "detail": "django.shortcuts",
+        "documentation": {}
+    },
+    {
+        "label": "Http404",
+        "importPath": "django.http",
+        "description": "django.http",
+        "isExtraImport": true,
+        "detail": "django.http",
+        "documentation": {}
+    },
+    {
+        "label": "sys",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "sys",
+        "description": "sys",
+        "detail": "sys",
+        "documentation": {}
+    },
+    {
+        "label": "application",
+        "kind": 5,
+        "importPath": "crb_website.crb_website.asgi",
+        "description": "crb_website.crb_website.asgi",
+        "peekOfCode": "application = get_asgi_application()",
+        "detail": "crb_website.crb_website.asgi",
+        "documentation": {}
+    },
+    {
+        "label": "BASE_DIR",
+        "kind": 5,
+        "importPath": "crb_website.crb_website.settings",
+        "description": "crb_website.crb_website.settings",
+        "peekOfCode": "BASE_DIR = Path(__file__).resolve().parent.parent\n# Quick-start development settings - unsuitable for production\n# See https://docs.djangoproject.com/en/5.2/howto/deployment/checklist/\n# SECURITY WARNING: keep the secret key used in production secret!\nSECRET_KEY = config('SECRET_KEY')\n# SECURITY WARNING: don't run with debug turned on in production!\nDEBUG = config('DEBUG', default=False, cast=bool)\nALLOWED_HOSTS = ['*']\n# Application definition\nINSTALLED_APPS = [",
+        "detail": "crb_website.crb_website.settings",
+        "documentation": {}
+    },
+    {
+        "label": "SECRET_KEY",
+        "kind": 5,
+        "importPath": "crb_website.crb_website.settings",
+        "description": "crb_website.crb_website.settings",
+        "peekOfCode": "SECRET_KEY = config('SECRET_KEY')\n# SECURITY WARNING: don't run with debug turned on in production!\nDEBUG = config('DEBUG', default=False, cast=bool)\nALLOWED_HOSTS = ['*']\n# Application definition\nINSTALLED_APPS = [\n    'main',\n    'news',\n    'django.contrib.admin',\n    'django.contrib.auth',",
+        "detail": "crb_website.crb_website.settings",
+        "documentation": {}
+    },
+    {
+        "label": "DEBUG",
+        "kind": 5,
+        "importPath": "crb_website.crb_website.settings",
+        "description": "crb_website.crb_website.settings",
+        "peekOfCode": "DEBUG = config('DEBUG', default=False, cast=bool)\nALLOWED_HOSTS = ['*']\n# Application definition\nINSTALLED_APPS = [\n    'main',\n    'news',\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',",
+        "detail": "crb_website.crb_website.settings",
+        "documentation": {}
+    },
+    {
+        "label": "ALLOWED_HOSTS",
+        "kind": 5,
+        "importPath": "crb_website.crb_website.settings",
+        "description": "crb_website.crb_website.settings",
+        "peekOfCode": "ALLOWED_HOSTS = ['*']\n# Application definition\nINSTALLED_APPS = [\n    'main',\n    'news',\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',\n    'django.contrib.messages',",
+        "detail": "crb_website.crb_website.settings",
+        "documentation": {}
+    },
+    {
+        "label": "INSTALLED_APPS",
+        "kind": 5,
+        "importPath": "crb_website.crb_website.settings",
+        "description": "crb_website.crb_website.settings",
+        "peekOfCode": "INSTALLED_APPS = [\n    'main',\n    'news',\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',\n    'django.contrib.messages',\n    'django.contrib.staticfiles',\n]",
+        "detail": "crb_website.crb_website.settings",
+        "documentation": {}
+    },
+    {
+        "label": "MIDDLEWARE",
+        "kind": 5,
+        "importPath": "crb_website.crb_website.settings",
+        "description": "crb_website.crb_website.settings",
+        "peekOfCode": "MIDDLEWARE = [\n    'django.middleware.security.SecurityMiddleware',\n    'django.contrib.sessions.middleware.SessionMiddleware',\n    'django.middleware.common.CommonMiddleware',\n    'django.middleware.csrf.CsrfViewMiddleware',\n    'django.contrib.auth.middleware.AuthenticationMiddleware',\n    'django.contrib.messages.middleware.MessageMiddleware',\n    'django.middleware.clickjacking.XFrameOptionsMiddleware',\n]\nROOT_URLCONF = 'crb_website.urls'",
+        "detail": "crb_website.crb_website.settings",
+        "documentation": {}
+    },
+    {
+        "label": "ROOT_URLCONF",
+        "kind": 5,
+        "importPath": "crb_website.crb_website.settings",
+        "description": "crb_website.crb_website.settings",
+        "peekOfCode": "ROOT_URLCONF = 'crb_website.urls'\nTEMPLATES = [\n    {\n        'BACKEND': 'django.template.backends.django.DjangoTemplates',\n        'DIRS': [],\n        'APP_DIRS': True,\n        'OPTIONS': {\n            'context_processors': [\n                'django.template.context_processors.request',\n                'django.contrib.auth.context_processors.auth',",
+        "detail": "crb_website.crb_website.settings",
+        "documentation": {}
+    },
+    {
+        "label": "TEMPLATES",
+        "kind": 5,
+        "importPath": "crb_website.crb_website.settings",
+        "description": "crb_website.crb_website.settings",
+        "peekOfCode": "TEMPLATES = [\n    {\n        'BACKEND': 'django.template.backends.django.DjangoTemplates',\n        'DIRS': [],\n        'APP_DIRS': True,\n        'OPTIONS': {\n            'context_processors': [\n                'django.template.context_processors.request',\n                'django.contrib.auth.context_processors.auth',\n                'django.contrib.messages.context_processors.messages',",
+        "detail": "crb_website.crb_website.settings",
+        "documentation": {}
+    },
+    {
+        "label": "WSGI_APPLICATION",
+        "kind": 5,
+        "importPath": "crb_website.crb_website.settings",
+        "description": "crb_website.crb_website.settings",
+        "peekOfCode": "WSGI_APPLICATION = 'crb_website.wsgi.application'\n# Database\n# https://docs.djangoproject.com/en/5.2/ref/settings/#databases\nDATABASES = {\n    'default': {\n        'ENGINE': 'django.db.backends.sqlite3',\n        'NAME': BASE_DIR / 'db.sqlite3',\n    }\n}\n# Password validation",
+        "detail": "crb_website.crb_website.settings",
+        "documentation": {}
+    },
+    {
+        "label": "DATABASES",
+        "kind": 5,
+        "importPath": "crb_website.crb_website.settings",
+        "description": "crb_website.crb_website.settings",
+        "peekOfCode": "DATABASES = {\n    'default': {\n        'ENGINE': 'django.db.backends.sqlite3',\n        'NAME': BASE_DIR / 'db.sqlite3',\n    }\n}\n# Password validation\n# https://docs.djangoproject.com/en/5.2/ref/settings/#auth-password-validators\nAUTH_PASSWORD_VALIDATORS = [\n    {",
+        "detail": "crb_website.crb_website.settings",
+        "documentation": {}
+    },
+    {
+        "label": "AUTH_PASSWORD_VALIDATORS",
+        "kind": 5,
+        "importPath": "crb_website.crb_website.settings",
+        "description": "crb_website.crb_website.settings",
+        "peekOfCode": "AUTH_PASSWORD_VALIDATORS = [\n    {\n        'NAME': 'django.contrib.auth.password_validation.UserAttributeSimilarityValidator',\n    },\n    {\n        'NAME': 'django.contrib.auth.password_validation.MinimumLengthValidator',\n    },\n    {\n        'NAME': 'django.contrib.auth.password_validation.CommonPasswordValidator',\n    },",
+        "detail": "crb_website.crb_website.settings",
+        "documentation": {}
+    },
+    {
+        "label": "LANGUAGE_CODE",
+        "kind": 5,
+        "importPath": "crb_website.crb_website.settings",
+        "description": "crb_website.crb_website.settings",
+        "peekOfCode": "LANGUAGE_CODE = 'ru'\nTIME_ZONE = 'UTC'\nUSE_I18N = True\nUSE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/5.2/howto/static-files/\nSTATIC_URL = 'static/'\nSTATIC_ROOT = BASE_DIR / 'staticfiles'\nSTATICFILES_DIRS = [\n    BASE_DIR / 'main' / 'static',",
+        "detail": "crb_website.crb_website.settings",
+        "documentation": {}
+    },
+    {
+        "label": "TIME_ZONE",
+        "kind": 5,
+        "importPath": "crb_website.crb_website.settings",
+        "description": "crb_website.crb_website.settings",
+        "peekOfCode": "TIME_ZONE = 'UTC'\nUSE_I18N = True\nUSE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/5.2/howto/static-files/\nSTATIC_URL = 'static/'\nSTATIC_ROOT = BASE_DIR / 'staticfiles'\nSTATICFILES_DIRS = [\n    BASE_DIR / 'main' / 'static',\n]",
+        "detail": "crb_website.crb_website.settings",
+        "documentation": {}
+    },
+    {
+        "label": "USE_I18N",
+        "kind": 5,
+        "importPath": "crb_website.crb_website.settings",
+        "description": "crb_website.crb_website.settings",
+        "peekOfCode": "USE_I18N = True\nUSE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/5.2/howto/static-files/\nSTATIC_URL = 'static/'\nSTATIC_ROOT = BASE_DIR / 'staticfiles'\nSTATICFILES_DIRS = [\n    BASE_DIR / 'main' / 'static',\n]\n# Default primary key field type",
+        "detail": "crb_website.crb_website.settings",
+        "documentation": {}
+    },
+    {
+        "label": "USE_TZ",
+        "kind": 5,
+        "importPath": "crb_website.crb_website.settings",
+        "description": "crb_website.crb_website.settings",
+        "peekOfCode": "USE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/5.2/howto/static-files/\nSTATIC_URL = 'static/'\nSTATIC_ROOT = BASE_DIR / 'staticfiles'\nSTATICFILES_DIRS = [\n    BASE_DIR / 'main' / 'static',\n]\n# Default primary key field type\n# https://docs.djangoproject.com/en/5.2/ref/settings/#default-auto-field",
+        "detail": "crb_website.crb_website.settings",
+        "documentation": {}
+    },
+    {
+        "label": "STATIC_URL",
+        "kind": 5,
+        "importPath": "crb_website.crb_website.settings",
+        "description": "crb_website.crb_website.settings",
+        "peekOfCode": "STATIC_URL = 'static/'\nSTATIC_ROOT = BASE_DIR / 'staticfiles'\nSTATICFILES_DIRS = [\n    BASE_DIR / 'main' / 'static',\n]\n# Default primary key field type\n# https://docs.djangoproject.com/en/5.2/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'",
+        "detail": "crb_website.crb_website.settings",
+        "documentation": {}
+    },
+    {
+        "label": "STATIC_ROOT",
+        "kind": 5,
+        "importPath": "crb_website.crb_website.settings",
+        "description": "crb_website.crb_website.settings",
+        "peekOfCode": "STATIC_ROOT = BASE_DIR / 'staticfiles'\nSTATICFILES_DIRS = [\n    BASE_DIR / 'main' / 'static',\n]\n# Default primary key field type\n# https://docs.djangoproject.com/en/5.2/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'",
+        "detail": "crb_website.crb_website.settings",
+        "documentation": {}
+    },
+    {
+        "label": "STATICFILES_DIRS",
+        "kind": 5,
+        "importPath": "crb_website.crb_website.settings",
+        "description": "crb_website.crb_website.settings",
+        "peekOfCode": "STATICFILES_DIRS = [\n    BASE_DIR / 'main' / 'static',\n]\n# Default primary key field type\n# https://docs.djangoproject.com/en/5.2/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'",
+        "detail": "crb_website.crb_website.settings",
+        "documentation": {}
+    },
+    {
+        "label": "DEFAULT_AUTO_FIELD",
+        "kind": 5,
+        "importPath": "crb_website.crb_website.settings",
+        "description": "crb_website.crb_website.settings",
+        "peekOfCode": "DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'",
+        "detail": "crb_website.crb_website.settings",
+        "documentation": {}
+    },
+    {
+        "label": "urlpatterns",
+        "kind": 5,
+        "importPath": "crb_website.crb_website.urls",
+        "description": "crb_website.crb_website.urls",
+        "peekOfCode": "urlpatterns = [\n    path('admin/', admin.site.urls),\n    path('', include('main.urls')),\n    path('news/', include('news.urls')),\n] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)",
+        "detail": "crb_website.crb_website.urls",
+        "documentation": {}
+    },
+    {
+        "label": "application",
+        "kind": 5,
+        "importPath": "crb_website.crb_website.wsgi",
+        "description": "crb_website.crb_website.wsgi",
+        "peekOfCode": "application = get_wsgi_application()",
+        "detail": "crb_website.crb_website.wsgi",
+        "documentation": {}
+    },
+    {
+        "label": "MainConfig",
+        "kind": 6,
+        "importPath": "crb_website.main.apps",
+        "description": "crb_website.main.apps",
+        "peekOfCode": "class MainConfig(AppConfig):\n    default_auto_field = 'django.db.models.BigAutoField'\n    name = 'main'",
+        "detail": "crb_website.main.apps",
+        "documentation": {}
+    },
+    {
+        "label": "urlpatterns",
+        "kind": 5,
+        "importPath": "crb_website.main.urls",
+        "description": "crb_website.main.urls",
+        "peekOfCode": "urlpatterns = [\n    path('', views.index, name='home'),\n    path('about/', views.about, name='about'),\n    path('about/<str:section>/', views.about_section, name='about_section'),\n    path('services/', views.services, name='services'),\n    path('contacts/', views.contacts, name='contacts'),\n    path('information/', views.information, name='information'),\n]",
+        "detail": "crb_website.main.urls",
+        "documentation": {}
+    },
+    {
+        "label": "index",
+        "kind": 2,
+        "importPath": "crb_website.main.views",
+        "description": "crb_website.main.views",
+        "peekOfCode": "def index(request):\n    return render(request, 'main/main.html')\ndef about(request):\n    return render(request, 'main/about.html')\ndef about_section(request, section):\n    templates = {\n        'administration': 'about/administration.html',\n        'departments': 'about/departments.html',\n        'history': 'about/history.html',\n        'specialists': 'about/specialists.html',",
+        "detail": "crb_website.main.views",
+        "documentation": {}
+    },
+    {
+        "label": "about",
+        "kind": 2,
+        "importPath": "crb_website.main.views",
+        "description": "crb_website.main.views",
+        "peekOfCode": "def about(request):\n    return render(request, 'main/about.html')\ndef about_section(request, section):\n    templates = {\n        'administration': 'about/administration.html',\n        'departments': 'about/departments.html',\n        'history': 'about/history.html',\n        'specialists': 'about/specialists.html',\n        'trade_union': 'about/trade_union.html',\n        'procedures': 'about/procedures.html',",
+        "detail": "crb_website.main.views",
+        "documentation": {}
+    },
+    {
+        "label": "about_section",
+        "kind": 2,
+        "importPath": "crb_website.main.views",
+        "description": "crb_website.main.views",
+        "peekOfCode": "def about_section(request, section):\n    templates = {\n        'administration': 'about/administration.html',\n        'departments': 'about/departments.html',\n        'history': 'about/history.html',\n        'specialists': 'about/specialists.html',\n        'trade_union': 'about/trade_union.html',\n        'procedures': 'about/procedures.html',\n        'media': 'about/media.html',\n        'rating_score': 'about/rating_score.html',",
+        "detail": "crb_website.main.views",
+        "documentation": {}
+    },
+    {
+        "label": "services",
+        "kind": 2,
+        "importPath": "crb_website.main.views",
+        "description": "crb_website.main.views",
+        "peekOfCode": "def services(request):\n    return render(request, 'main/services.html')\ndef information(request):\n    return render(request, 'main/information.html')\ndef contacts(request):\n    return render(request, 'main/contacts.html')",
+        "detail": "crb_website.main.views",
+        "documentation": {}
+    },
+    {
+        "label": "information",
+        "kind": 2,
+        "importPath": "crb_website.main.views",
+        "description": "crb_website.main.views",
+        "peekOfCode": "def information(request):\n    return render(request, 'main/information.html')\ndef contacts(request):\n    return render(request, 'main/contacts.html')",
+        "detail": "crb_website.main.views",
+        "documentation": {}
+    },
+    {
+        "label": "contacts",
+        "kind": 2,
+        "importPath": "crb_website.main.views",
+        "description": "crb_website.main.views",
+        "peekOfCode": "def contacts(request):\n    return render(request, 'main/contacts.html')",
+        "detail": "crb_website.main.views",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "crb_website.news.migrations.0001_initial",
+        "description": "crb_website.news.migrations.0001_initial",
+        "peekOfCode": "class Migration(migrations.Migration):\n    initial = True\n    dependencies = [\n    ]\n    operations = [\n        migrations.CreateModel(\n            name='Articles',\n            fields=[\n                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),\n                ('title', models.CharField(default='Внеочередное новостное событие', max_length=50, verbose_name='Название')),",
+        "detail": "crb_website.news.migrations.0001_initial",
+        "documentation": {}
+    },
+    {
+        "label": "NewsConfig",
+        "kind": 6,
+        "importPath": "crb_website.news.apps",
+        "description": "crb_website.news.apps",
+        "peekOfCode": "class NewsConfig(AppConfig):\n    default_auto_field = 'django.db.models.BigAutoField'\n    name = 'news'",
+        "detail": "crb_website.news.apps",
+        "documentation": {}
+    },
+    {
+        "label": "Articles",
+        "kind": 6,
+        "importPath": "crb_website.news.models",
+        "description": "crb_website.news.models",
+        "peekOfCode": "class Articles(models.Model):\n    title = models.CharField('Название', max_length=50,\n                             default='Внеочередное новостное событие')\n    img = models.ImageField(\n        'Изображение', upload_to='articles/', blank=True, null=True)\n    full_text = models.TextField('Статья')\n    date = models.DateField('Дата публикации')\n    def __str__(self):\n        return self.title\n    class Meta:",
+        "detail": "crb_website.news.models",
+        "documentation": {}
+    },
+    {
+        "label": "urlpatterns",
+        "kind": 5,
+        "importPath": "crb_website.news.urls",
+        "description": "crb_website.news.urls",
+        "peekOfCode": "urlpatterns = [\n    path('', views.news_home, name='news_home'),\n]",
+        "detail": "crb_website.news.urls",
+        "documentation": {}
+    },
+    {
+        "label": "news_home",
+        "kind": 2,
+        "importPath": "crb_website.news.views",
+        "description": "crb_website.news.views",
+        "peekOfCode": "def news_home(request):\n    news = Articles.objects.order_by('-date')\n    return render(request, 'news/news_home.html', {'news': news})",
+        "detail": "crb_website.news.views",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "kind": 2,
+        "importPath": "crb_website.manage",
+        "description": "crb_website.manage",
+        "peekOfCode": "def main():\n    \"\"\"Run administrative tasks.\"\"\"\n    os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'crb_website.settings')\n    try:\n        from django.core.management import execute_from_command_line\n    except ImportError as exc:\n        raise ImportError(\n            \"Couldn't import Django. Are you sure it's installed and \"\n            \"available on your PYTHONPATH environment variable? Did you \"\n            \"forget to activate a virtual environment?\"",
+        "detail": "crb_website.manage",
+        "documentation": {}
+    }
+]
