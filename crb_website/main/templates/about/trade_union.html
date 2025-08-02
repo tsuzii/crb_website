@@ -1,1 +1,21 @@
 {% extends 'main/layout.html' %} 
+{% load static %}
+
+
+{% block title %} История учреждения{% endblock %}
+
+{% block content %}
+<link rel="stylesheet" href="{% static 'main/css/about.css' %}">
+<div class="about-container">
+  <h1>ПРОФСОЮЗ</h1>
+  <p>Первичная профсоюзная организация</p>
+  <p>УЗ «Воложинская центральная районная больница»  </p>
+  <p>Заместитель председателя ППО УЗ «Воложинская ЦРБ» － Буклыс Юлия Алексеевна</p>
+  <p>Казначей ППО УЗ «Воложинская ЦРБ» － Овсиенко Инесса Михайловна </p>
+  <p>Работа с гражданами:</p>
+  <p>16:00 - 17:00</p>
+  <img src="{% static 'main/img/qr_code_prof.png' %}" alt="Фото" class="photo-img">
+  <p>Сканируй и присоединяйся!</p>
+  <p>(для членов ППО УЗ «Воложинская ЦРБ»)</p>
+</div>
+{% endblock %}
