@@ -101,10 +101,9 @@
               <li><a href="{% url 'about_section' 'trade_union' %}">Профсоюз</a></li>
               <li><a href="{% url 'about_section' 'specialists' %}">Специалисты</a></li>
               <li><a href="{% url 'about_section' 'departments' %}">Отделения</a></li>
-              <li><a href="{% url 'about_section' 'media' %}">СМИ о нас</a></li>
               <li><a href="{% url 'about_section' 'procedures' %}">Административные процедуры</a></li>
-              <li><a href="{% url 'about_section' '
-rating_score' %}">Рейтинговая оценка качества услуг</a></li>
+              <li><a href="{% url 'about_section' 'rating_score' %}">Рейтинговая оценка качества услуг</a></li>
+              <li><a href="{% url 'about_section' 'media' %}">СМИ о нас</a></li>
             </ul>
           </li>
 
@@ -113,10 +112,10 @@ rating_score' %}">Рейтинговая оценка качества услу�
             <ul class="dropdown-menu">
               <li><a href="/">Платные медицинские услуги гражданам РБ</a></li>
               <li><a href="/">Платные медицинские услуги иностранным гражданам</a></li>
-              <li><a href="/">Клинико-диагностическая лаборатория</a></li>
-              <li><a href="/">Кабинет УЗИ</a></li>
-              <li><a href="/">Кабинет функциональной диагностики</a></li>
               <li><a href="/">Кабинет эндоскопический</a></li>
+              <li><a href="/">Кабинет УЗИ</a></li>
+              <li><a href="/">Клинико-диагностическая лаборатория</a></li>
+              <li><a href="/">Кабинет функциональной диагностики</a></li>
               <li><a href="/">Кабинет рентгенодиагностический</a></li>
               <li><a href="/">Кабинет компьютерной рентгеновской томографии</a></li>
             </ul>
@@ -125,13 +124,13 @@ rating_score' %}">Рейтинговая оценка качества услу�
           <li class="nav-item dropdown">
             <a href="{% url 'information' %}" class="nav-link"><i class="fa-solid fa-circle-info"></i> Информация</a>
             <ul class="dropdown-menu">
-              <li><a href="/">График приема специалистов</a></li>
-              <li><a href="/">Регламент прохождения комиссии на управление транспортными средствами</a></li>
+              <li><a href="/">Вакансии</a></li>
               <li><a href="/">Объявления</a></li>
+              <li><a href="/">Диспансеризация</a></li>
               <li><a href="/">Новости медицины</a></li>
               <li><a href="/">Паллиативная помощь</a></li>
-              <li><a href="/">Диспансеризация</a></li>
-              <li><a href="/">Вакансии</a></li>
+              <li><a href="/">График приема специалистов</a></li>
+              <li><a href="/">Регламент прохождения комиссии на управление транспортными средствами</a></li>
               <li><a href="/">Лекарственные средства отечественных производителей</a></li>
             </ul>
           </li>
@@ -152,20 +151,45 @@ rating_score' %}">Рейтинговая оценка качества услу�
 
     {% endblock %}
   </main>
-  <div class="page-wrapper">
-    <header class="footer-header">...</header>
-    <nav class="footer-nav">Основное меню</nav>
+    <div class="footer-nav">
+  <div class="footer-container">
+    <!-- Левая часть: логотип + текст -->
+    <div class="footer-left">
+      <div class="footer-brand">
+        <img src="{% static 'main/img/logo.png' %}" alt="Логотип" class="footer-logo">
+        <div class="footer-text">
+          <span>УЧРЕЖДЕНИЕ ЗДРАВООХРАНЕНИЯ</span>
+          <span>"ВОЛОЖИНСКАЯ ЦЕНТРАЛЬНАЯ РАЙОННАЯ БОЛЬНИЦА"</span>
+        </div>
+      </div>
     </div>
+
+    <!-- Правая часть: меню -->
+    <nav class="footer-menu">
+      <ul>
+        <li><a href="{% url 'home' %}"><i class="fas fa-home"></i> Главная</a></li>
+        <li><a href="{% url 'about' %}"><i class="fas fa-hospital"></i> Об учреждении</a></li>
+        <li><a href="{% url 'services' %}"><i class="fas fa-stethoscope"></i> Услуги</a></li>
+        <li><a href="{% url 'information' %}"><i class="fa-solid fa-circle-info"></i> Информация</a></li>
+        <li><a href="{% url 'contacts' %}"><i class="fas fa-phone"></i> Контакты</a></li>
+      </ul>
+    </nav>
+  </div>
+</div>
+
+
+
+  </div>
     <footer class="footer">
       <div class="footer-content">
         <span>
           © 2025 Учреждение здравоохранения "Воложинская центральная районная больница"
         </span>
         <div class="social-icons">
-          <a href="https://instagram.com" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-          <a href="https://vk.com" target="_blank" aria-label="VK"><i class="fab fa-vk"></i></a>
-          <a href="https://ok.ru" target="_blank" aria-label="Одноклассники"><i class="fab fa-odnoklassniki"></i></a>
-          <a href="https://youtube.com" target="_blank" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+          <a href="https://www.instagram.com/volozhinmed/" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="https://vk.com/volozhinmed" target="_blank" aria-label="VK"><i class="fab fa-vk"></i></a>
+          <a href="https://m.ok.ru/volozhinmed" target="_blank" aria-label="Одноклассники"><i class="fab fa-odnoklassniki"></i></a>
+          <a href="https://www.youtube.com/channel/UCaO_hexuhXUU3uwwYQyIqLQ" target="_blank" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
         </div>
       </div>
     </footer>

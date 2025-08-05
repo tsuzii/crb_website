@@ -1,1 +1,14 @@
 {% extends 'main/layout.html' %} 
+{% load static %}
+
+
+{% block title %}Рейтинговая оценка{% endblock %}
+
+{% block content %}
+<link rel="stylesheet" href="{% static 'main/css/about.css' %}">
+<div class="about-container">
+  <h1>Рейтинговая оценка качества услуг</h1>
+  <h2>Портал рейтинговой оценки качества оказания услуг:</h2>
+  <a  class="center_text" href="https://xn----7sbgfh2alwzdhpc0c.xn--90ais/organization/23214/org-page">Перейти к оценке!</a>
+</div>
+{% endblock %}

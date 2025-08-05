@@ -146,9 +146,7 @@ body {
   font-size: 14px;
 }
 
-/* ==============================
-   Навигация
-============================== */
+/* ==============================Навигация============================== */
 .main-nav {
   width: 100%;
   background: white;
@@ -262,9 +260,7 @@ body {
   color: white;
 }
 
-/* ==============================
-   Анимации
-============================== */
+/* ==============================Анимации============================== */
 @keyframes fadeIn {
   from {
     opacity: 0;
@@ -276,9 +272,7 @@ body {
   }
 }
 
-/* ==============================
-   Адаптивность
-============================== */
+/* ==============================Адаптивность============================== */
 @media (max-width: 1200px) {
   .services-list {
     gap: 30px;
@@ -382,10 +376,67 @@ body {
 }
 
 .footer-nav {
-    background-color: #354083;
-    width: 100%;
-    padding: 200px 300px;
-    text-align: left;
+  background-color: #3F4A8A;
+  padding: 40px 0;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center; 
+}
+
+.footer-left {
+  display: flex;
+}
+
+.footer-brand {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.footer-logo {
+  height: 60px;
+  width: auto;
+  object-fit: contain;
+}
+
+.footer-text span {
+  display: block;
+  font-size: 18px;
+  color: #cfd3f2;
+  line-height: 1.4;
+}
+
+.footer-text span:first-child {
+  margin-bottom: 8px;
+}
+
+.footer-menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-menu li {
+  margin-bottom: 10px;
+}
+
+.footer-menu a {
+  text-decoration: none;
+  color: #cfd3f2;
+  font-size: 15px;
+  font-weight: 300;
+  transition: color 0.3s ease;
+}
+
+.footer-menu a:hover {
+  color: #D79A4A; 
 }
 
 

@@ -17,7 +17,7 @@ main .features ul {max-width: 400px; margin: 20px auto;}
 
 .ultra-wide-video {
     width: 100%;
-    height: 350px; /* Фиксированная маленькая высота */
+    height: 350px; 
     overflow: hidden;
     position: relative;
 }
@@ -27,7 +27,7 @@ main .features ul {max-width: 400px; margin: 20px auto;}
     top: 50%;
     left: 0;
     width: 100%;
-    height: 350%; /* Увеличиваем высоту для обрезки */
+    height: 350%;
     transform: translateY(-50%);
     object-fit: cover;
 }
