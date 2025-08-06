@@ -57,6 +57,14 @@
         "documentation": {}
     },
     {
+        "label": "admin",
+        "importPath": "django.contrib",
+        "description": "django.contrib",
+        "isExtraImport": true,
+        "detail": "django.contrib",
+        "documentation": {}
+    },
+    {
         "label": "path",
         "importPath": "django.urls",
         "description": "django.urls",
@@ -66,6 +74,14 @@
     },
     {
         "label": "include",
+        "importPath": "django.urls",
+        "description": "django.urls",
+        "isExtraImport": true,
+        "detail": "django.urls",
+        "documentation": {}
+    },
+    {
+        "label": "path",
         "importPath": "django.urls",
         "description": "django.urls",
         "isExtraImport": true,
@@ -129,6 +145,102 @@
         "documentation": {}
     },
     {
+        "label": "AppConfig",
+        "importPath": "django.apps",
+        "description": "django.apps",
+        "isExtraImport": true,
+        "detail": "django.apps",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
         "label": "models",
         "importPath": "django.db",
         "description": "django.db",
@@ -174,6 +286,22 @@
         "description": "django.test",
         "isExtraImport": true,
         "detail": "django.test",
+        "documentation": {}
+    },
+    {
+        "label": "TestCase",
+        "importPath": "django.test",
+        "description": "django.test",
+        "isExtraImport": true,
+        "detail": "django.test",
+        "documentation": {}
+    },
+    {
+        "label": "render",
+        "importPath": "django.shortcuts",
+        "description": "django.shortcuts",
+        "isExtraImport": true,
+        "detail": "django.shortcuts",
         "documentation": {}
     },
     {
@@ -232,7 +360,7 @@
         "kind": 5,
         "importPath": "crb_website.crb_website.settings",
         "description": "crb_website.crb_website.settings",
-        "peekOfCode": "SECRET_KEY = config('SECRET_KEY')\n# SECURITY WARNING: don't run with debug turned on in production!\nDEBUG = config('DEBUG', default=False, cast=bool)\nALLOWED_HOSTS = ['*']\n# Application definition\nINSTALLED_APPS = [\n    'main',\n    'news',\n    'django.contrib.admin',\n    'django.contrib.auth',",
+        "peekOfCode": "SECRET_KEY = config('SECRET_KEY')\n# SECURITY WARNING: don't run with debug turned on in production!\nDEBUG = config('DEBUG', default=False, cast=bool)\nALLOWED_HOSTS = ['*']\n# Application definition\nINSTALLED_APPS = [\n    'main',\n    'news',\n    'staff',\n    'django.contrib.admin',",
         "detail": "crb_website.crb_website.settings",
         "documentation": {}
     },
@@ -241,7 +369,7 @@
         "kind": 5,
         "importPath": "crb_website.crb_website.settings",
         "description": "crb_website.crb_website.settings",
-        "peekOfCode": "DEBUG = config('DEBUG', default=False, cast=bool)\nALLOWED_HOSTS = ['*']\n# Application definition\nINSTALLED_APPS = [\n    'main',\n    'news',\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',",
+        "peekOfCode": "DEBUG = config('DEBUG', default=False, cast=bool)\nALLOWED_HOSTS = ['*']\n# Application definition\nINSTALLED_APPS = [\n    'main',\n    'news',\n    'staff',\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',",
         "detail": "crb_website.crb_website.settings",
         "documentation": {}
     },
@@ -250,7 +378,7 @@
         "kind": 5,
         "importPath": "crb_website.crb_website.settings",
         "description": "crb_website.crb_website.settings",
-        "peekOfCode": "ALLOWED_HOSTS = ['*']\n# Application definition\nINSTALLED_APPS = [\n    'main',\n    'news',\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',\n    'django.contrib.messages',",
+        "peekOfCode": "ALLOWED_HOSTS = ['*']\n# Application definition\nINSTALLED_APPS = [\n    'main',\n    'news',\n    'staff',\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',",
         "detail": "crb_website.crb_website.settings",
         "documentation": {}
     },
@@ -259,7 +387,7 @@
         "kind": 5,
         "importPath": "crb_website.crb_website.settings",
         "description": "crb_website.crb_website.settings",
-        "peekOfCode": "INSTALLED_APPS = [\n    'main',\n    'news',\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',\n    'django.contrib.messages',\n    'django.contrib.staticfiles',\n]",
+        "peekOfCode": "INSTALLED_APPS = [\n    'main',\n    'news',\n    'staff',\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',\n    'django.contrib.messages',\n    'django.contrib.staticfiles',",
         "detail": "crb_website.crb_website.settings",
         "documentation": {}
     },
@@ -394,7 +522,7 @@
         "kind": 5,
         "importPath": "crb_website.crb_website.urls",
         "description": "crb_website.crb_website.urls",
-        "peekOfCode": "urlpatterns = [\n    path('admin/', admin.site.urls),\n    path('', include('main.urls')),\n    path('news/', include('news.urls')),\n] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)",
+        "peekOfCode": "urlpatterns = [\n    path('admin/', admin.site.urls),\n    path('', include('main.urls')),\n    path('news/', include('news.urls')),\n    path('staff/', include('staff.urls')),\n] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)",
         "detail": "crb_website.crb_website.urls",
         "documentation": {}
     },
@@ -430,7 +558,7 @@
         "kind": 2,
         "importPath": "crb_website.main.views",
         "description": "crb_website.main.views",
-        "peekOfCode": "def index(request):\n    return render(request, 'main/main.html')\ndef about(request):\n    return render(request, 'main/about.html')\ndef about_section(request, section):\n    templates = {\n        'administration': 'about/administration.html',\n        'departments': 'about/departments.html',\n        'history': 'about/history.html',\n        'specialists': 'about/specialists.html',",
+        "peekOfCode": "def index(request):\n    return render(request, 'main/main.html')\ndef about(request):\n    return render(request, 'main/about.html')\ndef about_section(request, section):\n    templates = {\n        'administration': 'about/administration.html',\n        'departments': 'about/departments.html',\n        'history': 'about/history.html',\n        'trade_union': 'about/trade_union.html',",
         "detail": "crb_website.main.views",
         "documentation": {}
     },
@@ -439,7 +567,7 @@
         "kind": 2,
         "importPath": "crb_website.main.views",
         "description": "crb_website.main.views",
-        "peekOfCode": "def about(request):\n    return render(request, 'main/about.html')\ndef about_section(request, section):\n    templates = {\n        'administration': 'about/administration.html',\n        'departments': 'about/departments.html',\n        'history': 'about/history.html',\n        'specialists': 'about/specialists.html',\n        'trade_union': 'about/trade_union.html',\n        'procedures': 'about/procedures.html',",
+        "peekOfCode": "def about(request):\n    return render(request, 'main/about.html')\ndef about_section(request, section):\n    templates = {\n        'administration': 'about/administration.html',\n        'departments': 'about/departments.html',\n        'history': 'about/history.html',\n        'trade_union': 'about/trade_union.html',\n        'procedures': 'about/procedures.html',\n        'media': 'about/media.html',",
         "detail": "crb_website.main.views",
         "documentation": {}
     },
@@ -448,7 +576,7 @@
         "kind": 2,
         "importPath": "crb_website.main.views",
         "description": "crb_website.main.views",
-        "peekOfCode": "def about_section(request, section):\n    templates = {\n        'administration': 'about/administration.html',\n        'departments': 'about/departments.html',\n        'history': 'about/history.html',\n        'specialists': 'about/specialists.html',\n        'trade_union': 'about/trade_union.html',\n        'procedures': 'about/procedures.html',\n        'media': 'about/media.html',\n        'rating_score': 'about/rating_score.html',",
+        "peekOfCode": "def about_section(request, section):\n    templates = {\n        'administration': 'about/administration.html',\n        'departments': 'about/departments.html',\n        'history': 'about/history.html',\n        'trade_union': 'about/trade_union.html',\n        'procedures': 'about/procedures.html',\n        'media': 'about/media.html',\n        'rating_score': 'about/rating_score.html',\n    }",
         "detail": "crb_website.main.views",
         "documentation": {}
     },
@@ -522,6 +650,105 @@
         "description": "crb_website.news.views",
         "peekOfCode": "def news_home(request):\n    news = Articles.objects.order_by('-date')\n    return render(request, 'news/news_home.html', {'news': news})",
         "detail": "crb_website.news.views",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "crb_website.staff.migrations.0001_initial",
+        "description": "crb_website.staff.migrations.0001_initial",
+        "peekOfCode": "class Migration(migrations.Migration):\n    initial = True\n    dependencies = [\n    ]\n    operations = [\n        migrations.CreateModel(\n            name='Specialist',\n            fields=[\n                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),\n                ('name', models.CharField(max_length=255)),",
+        "detail": "crb_website.staff.migrations.0001_initial",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "crb_website.staff.migrations.0002_specialist_bio_specialist_category",
+        "description": "crb_website.staff.migrations.0002_specialist_bio_specialist_category",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('staff', '0001_initial'),\n    ]\n    operations = [\n        migrations.AddField(\n            model_name='specialist',\n            name='bio',\n            field=models.TextField(blank=True),\n        ),",
+        "detail": "crb_website.staff.migrations.0002_specialist_bio_specialist_category",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "crb_website.staff.migrations.0003_alter_specialist_options_specialist_order",
+        "description": "crb_website.staff.migrations.0003_alter_specialist_options_specialist_order",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('staff', '0002_specialist_bio_specialist_category'),\n    ]\n    operations = [\n        migrations.AlterModelOptions(\n            name='specialist',\n            options={'ordering': ['order']},\n        ),\n        migrations.AddField(",
+        "detail": "crb_website.staff.migrations.0003_alter_specialist_options_specialist_order",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "crb_website.staff.migrations.0004_specialist_phone",
+        "description": "crb_website.staff.migrations.0004_specialist_phone",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('staff', '0003_alter_specialist_options_specialist_order'),\n    ]\n    operations = [\n        migrations.AddField(\n            model_name='specialist',\n            name='phone',\n            field=models.TextField(blank=True),\n        ),",
+        "detail": "crb_website.staff.migrations.0004_specialist_phone",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "crb_website.staff.migrations.0005_alter_specialist_phone",
+        "description": "crb_website.staff.migrations.0005_alter_specialist_phone",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('staff', '0004_specialist_phone'),\n    ]\n    operations = [\n        migrations.AlterField(\n            model_name='specialist',\n            name='phone',\n            field=models.CharField(blank=True, max_length=30),\n        ),",
+        "detail": "crb_website.staff.migrations.0005_alter_specialist_phone",
+        "documentation": {}
+    },
+    {
+        "label": "SpecialistAdmin",
+        "kind": 6,
+        "importPath": "crb_website.staff.admin",
+        "description": "crb_website.staff.admin",
+        "peekOfCode": "class SpecialistAdmin(admin.ModelAdmin):\n    list_display = ('name', 'position', 'category', 'is_active', 'order')\n    list_editable = ('order',)\n    list_filter = ('category', 'is_active')\n    ordering = ('order',)",
+        "detail": "crb_website.staff.admin",
+        "documentation": {}
+    },
+    {
+        "label": "StaffConfig",
+        "kind": 6,
+        "importPath": "crb_website.staff.apps",
+        "description": "crb_website.staff.apps",
+        "peekOfCode": "class StaffConfig(AppConfig):\n    default_auto_field = 'django.db.models.BigAutoField'\n    name = 'staff'",
+        "detail": "crb_website.staff.apps",
+        "documentation": {}
+    },
+    {
+        "label": "Specialist",
+        "kind": 6,
+        "importPath": "crb_website.staff.models",
+        "description": "crb_website.staff.models",
+        "peekOfCode": "class Specialist(models.Model):\n    CATEGORY_CHOICES = [\n        ('admin', 'Администрация'),\n        ('general', 'Общий специалист'),\n    ]\n    name = models.CharField(max_length=255)\n    position = models.CharField(max_length=255)\n    photo = models.ImageField(upload_to='staff_photos/', blank=True, null=True)\n    bio = models.TextField(blank=True)\n    is_active = models.BooleanField(default=True)",
+        "detail": "crb_website.staff.models",
+        "documentation": {}
+    },
+    {
+        "label": "urlpatterns",
+        "kind": 5,
+        "importPath": "crb_website.staff.urls",
+        "description": "crb_website.staff.urls",
+        "peekOfCode": "urlpatterns = [\n    path('', specialists_list, name='specialists_list'),\n]",
+        "detail": "crb_website.staff.urls",
+        "documentation": {}
+    },
+    {
+        "label": "specialists_list",
+        "kind": 2,
+        "importPath": "crb_website.staff.views",
+        "description": "crb_website.staff.views",
+        "peekOfCode": "def specialists_list(request):\n    specialists = Specialist.objects.filter(is_active=True)\n    return render(request, 'staff/specialists_list.html', {'specialists': specialists})\ndef administration_view(request):\n    admins = Specialist.objects.filter(\n        category='admin', is_active=True).order_by('order')\n    return render(request, 'staff/administration.html', {'specialists': admins})",
+        "detail": "crb_website.staff.views",
+        "documentation": {}
+    },
+    {
+        "label": "administration_view",
+        "kind": 2,
+        "importPath": "crb_website.staff.views",
+        "description": "crb_website.staff.views",
+        "peekOfCode": "def administration_view(request):\n    admins = Specialist.objects.filter(\n        category='admin', is_active=True).order_by('order')\n    return render(request, 'staff/administration.html', {'specialists': admins})",
+        "detail": "crb_website.staff.views",
         "documentation": {}
     },
     {

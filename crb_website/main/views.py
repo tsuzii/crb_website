@@ -16,7 +16,6 @@ def about_section(request, section):
         'administration': 'about/administration.html',
         'departments': 'about/departments.html',
         'history': 'about/history.html',
-        'specialists': 'about/specialists.html',
         'trade_union': 'about/trade_union.html',
         'procedures': 'about/procedures.html',
         'media': 'about/media.html',

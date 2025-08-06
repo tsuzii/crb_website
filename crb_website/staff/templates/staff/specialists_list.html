@@ -1,0 +1,25 @@
+{% extends 'main/layout.html' %} 
+{% load static %}
+
+{% block title %}Специалисты{% endblock %}
+
+{% block content %}
+<link rel="stylesheet" href="{% static 'main/css/about.css' %}">
+<div class="about-container">
+  <h1>Наши специалисты</h1>
+    <ul>
+      {% if specialists %}
+        {% for specialist in specialists %}
+          <li>
+            <strong>{{ specialist.name }}</strong> — {{ specialist.position }}
+            {% if specialist.photo %}
+              <img src="{{ specialist.photo.url }}" alt="{{ specialist.name }}" width="100">
+            {% endif %}
+          </li>
+        {% endfor %}
+      {% else %}
+      <p>У вас нет специалистов!</p>
+      {% endif %}
+    </ul>
+</div> 
+{% endblock %}
