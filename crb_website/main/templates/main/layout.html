@@ -97,9 +97,9 @@
             <ul class="dropdown-menu">
               <li><a href="{% url 'about' %}">О нас</a></li>
               <li><a href="{% url 'about_section' 'history' %}">История учреждения</a></li>
-              <li><a href="{% url 'about_section' 'administration' %}">Администрация</a></li>
+              <li><a href="{% url 'administration_list' %}">Администрация</a></li>
               <li><a href="{% url 'about_section' 'trade_union' %}">Профсоюз</a></li>
-              <li><a href="/">Специалисты</a></li>
+              <li><a href="{% url 'specialists_list' %}">Специалисты</a></li>
               <li><a href="{% url 'about_section' 'departments' %}">Отделения</a></li>
               <li><a href="{% url 'about_section' 'procedures' %}">Административные процедуры</a></li>
               <li><a href="{% url 'about_section' 'rating_score' %}">Рейтинговая оценка качества услуг</a></li>

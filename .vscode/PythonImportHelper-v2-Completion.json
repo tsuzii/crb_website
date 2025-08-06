@@ -486,7 +486,7 @@
         "kind": 5,
         "importPath": "crb_website.crb_website.settings",
         "description": "crb_website.crb_website.settings",
-        "peekOfCode": "STATIC_URL = 'static/'\nSTATIC_ROOT = BASE_DIR / 'staticfiles'\nSTATICFILES_DIRS = [\n    BASE_DIR / 'main' / 'static',\n]\n# Default primary key field type\n# https://docs.djangoproject.com/en/5.2/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'",
+        "peekOfCode": "STATIC_URL = 'static/'\nSTATIC_ROOT = BASE_DIR / 'staticfiles'\nSTATICFILES_DIRS = [\n    BASE_DIR / 'main' / 'static',\n]\n# Default primary key field type\n# https://docs.djangoproject.com/en/5.2/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'\nMEDIA_URL = '/media/'\nMEDIA_ROOT = os.path.join(BASE_DIR, 'media')",
         "detail": "crb_website.crb_website.settings",
         "documentation": {}
     },
@@ -495,7 +495,7 @@
         "kind": 5,
         "importPath": "crb_website.crb_website.settings",
         "description": "crb_website.crb_website.settings",
-        "peekOfCode": "STATIC_ROOT = BASE_DIR / 'staticfiles'\nSTATICFILES_DIRS = [\n    BASE_DIR / 'main' / 'static',\n]\n# Default primary key field type\n# https://docs.djangoproject.com/en/5.2/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'",
+        "peekOfCode": "STATIC_ROOT = BASE_DIR / 'staticfiles'\nSTATICFILES_DIRS = [\n    BASE_DIR / 'main' / 'static',\n]\n# Default primary key field type\n# https://docs.djangoproject.com/en/5.2/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'\nMEDIA_URL = '/media/'\nMEDIA_ROOT = os.path.join(BASE_DIR, 'media')",
         "detail": "crb_website.crb_website.settings",
         "documentation": {}
     },
@@ -504,7 +504,7 @@
         "kind": 5,
         "importPath": "crb_website.crb_website.settings",
         "description": "crb_website.crb_website.settings",
-        "peekOfCode": "STATICFILES_DIRS = [\n    BASE_DIR / 'main' / 'static',\n]\n# Default primary key field type\n# https://docs.djangoproject.com/en/5.2/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'",
+        "peekOfCode": "STATICFILES_DIRS = [\n    BASE_DIR / 'main' / 'static',\n]\n# Default primary key field type\n# https://docs.djangoproject.com/en/5.2/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'\nMEDIA_URL = '/media/'\nMEDIA_ROOT = os.path.join(BASE_DIR, 'media')",
         "detail": "crb_website.crb_website.settings",
         "documentation": {}
     },
@@ -513,7 +513,25 @@
         "kind": 5,
         "importPath": "crb_website.crb_website.settings",
         "description": "crb_website.crb_website.settings",
-        "peekOfCode": "DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'",
+        "peekOfCode": "DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'\nMEDIA_URL = '/media/'\nMEDIA_ROOT = os.path.join(BASE_DIR, 'media')",
+        "detail": "crb_website.crb_website.settings",
+        "documentation": {}
+    },
+    {
+        "label": "MEDIA_URL",
+        "kind": 5,
+        "importPath": "crb_website.crb_website.settings",
+        "description": "crb_website.crb_website.settings",
+        "peekOfCode": "MEDIA_URL = '/media/'\nMEDIA_ROOT = os.path.join(BASE_DIR, 'media')",
+        "detail": "crb_website.crb_website.settings",
+        "documentation": {}
+    },
+    {
+        "label": "MEDIA_ROOT",
+        "kind": 5,
+        "importPath": "crb_website.crb_website.settings",
+        "description": "crb_website.crb_website.settings",
+        "peekOfCode": "MEDIA_ROOT = os.path.join(BASE_DIR, 'media')",
         "detail": "crb_website.crb_website.settings",
         "documentation": {}
     },
@@ -522,7 +540,7 @@
         "kind": 5,
         "importPath": "crb_website.crb_website.urls",
         "description": "crb_website.crb_website.urls",
-        "peekOfCode": "urlpatterns = [\n    path('admin/', admin.site.urls),\n    path('', include('main.urls')),\n    path('news/', include('news.urls')),\n    path('staff/', include('staff.urls')),\n] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)",
+        "peekOfCode": "urlpatterns = [\n    path('admin/', admin.site.urls),\n    path('', include('main.urls')),\n    path('news/', include('news.urls')),\n    path('staff/', include('staff.urls')),\n] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)\nif settings.DEBUG:\n    urlpatterns += static(settings.MEDIA_URL,\n                          document_root=settings.MEDIA_ROOT)",
         "detail": "crb_website.crb_website.urls",
         "documentation": {}
     },
@@ -558,7 +576,7 @@
         "kind": 2,
         "importPath": "crb_website.main.views",
         "description": "crb_website.main.views",
-        "peekOfCode": "def index(request):\n    return render(request, 'main/main.html')\ndef about(request):\n    return render(request, 'main/about.html')\ndef about_section(request, section):\n    templates = {\n        'administration': 'about/administration.html',\n        'departments': 'about/departments.html',\n        'history': 'about/history.html',\n        'trade_union': 'about/trade_union.html',",
+        "peekOfCode": "def index(request):\n    return render(request, 'main/main.html')\ndef about(request):\n    return render(request, 'main/about.html')\ndef about_section(request, section):\n    templates = {\n        'departments': 'about/departments.html',\n        'history': 'about/history.html',\n        'trade_union': 'about/trade_union.html',\n        'procedures': 'about/procedures.html',",
         "detail": "crb_website.main.views",
         "documentation": {}
     },
@@ -567,7 +585,7 @@
         "kind": 2,
         "importPath": "crb_website.main.views",
         "description": "crb_website.main.views",
-        "peekOfCode": "def about(request):\n    return render(request, 'main/about.html')\ndef about_section(request, section):\n    templates = {\n        'administration': 'about/administration.html',\n        'departments': 'about/departments.html',\n        'history': 'about/history.html',\n        'trade_union': 'about/trade_union.html',\n        'procedures': 'about/procedures.html',\n        'media': 'about/media.html',",
+        "peekOfCode": "def about(request):\n    return render(request, 'main/about.html')\ndef about_section(request, section):\n    templates = {\n        'departments': 'about/departments.html',\n        'history': 'about/history.html',\n        'trade_union': 'about/trade_union.html',\n        'procedures': 'about/procedures.html',\n        'media': 'about/media.html',\n        'rating_score': 'about/rating_score.html',",
         "detail": "crb_website.main.views",
         "documentation": {}
     },
@@ -576,7 +594,7 @@
         "kind": 2,
         "importPath": "crb_website.main.views",
         "description": "crb_website.main.views",
-        "peekOfCode": "def about_section(request, section):\n    templates = {\n        'administration': 'about/administration.html',\n        'departments': 'about/departments.html',\n        'history': 'about/history.html',\n        'trade_union': 'about/trade_union.html',\n        'procedures': 'about/procedures.html',\n        'media': 'about/media.html',\n        'rating_score': 'about/rating_score.html',\n    }",
+        "peekOfCode": "def about_section(request, section):\n    templates = {\n        'departments': 'about/departments.html',\n        'history': 'about/history.html',\n        'trade_union': 'about/trade_union.html',\n        'procedures': 'about/procedures.html',\n        'media': 'about/media.html',\n        'rating_score': 'about/rating_score.html',\n    }\n    template = templates.get(section)",
         "detail": "crb_website.main.views",
         "documentation": {}
     },
@@ -729,7 +747,7 @@
         "kind": 5,
         "importPath": "crb_website.staff.urls",
         "description": "crb_website.staff.urls",
-        "peekOfCode": "urlpatterns = [\n    path('', specialists_list, name='specialists_list'),\n]",
+        "peekOfCode": "urlpatterns = [\n    path('', specialists_list, name='specialists_list'),\n    path('administration/', administration_view, name='administration_list'),\n]",
         "detail": "crb_website.staff.urls",
         "documentation": {}
     },
@@ -738,7 +756,7 @@
         "kind": 2,
         "importPath": "crb_website.staff.views",
         "description": "crb_website.staff.views",
-        "peekOfCode": "def specialists_list(request):\n    specialists = Specialist.objects.filter(is_active=True)\n    return render(request, 'staff/specialists_list.html', {'specialists': specialists})\ndef administration_view(request):\n    admins = Specialist.objects.filter(\n        category='admin', is_active=True).order_by('order')\n    return render(request, 'staff/administration.html', {'specialists': admins})",
+        "peekOfCode": "def specialists_list(request):\n    specialists = Specialist.objects.filter(category='general', is_active=True)\n    return render(request, 'staff/specialists_list.html', {'specialists': specialists})\ndef administration_view(request):\n    admins = Specialist.objects.filter(\n        category='admin', is_active=True).order_by('order')\n    return render(request, 'staff/administration.html', {'specialists': admins})",
         "detail": "crb_website.staff.views",
         "documentation": {}
     },

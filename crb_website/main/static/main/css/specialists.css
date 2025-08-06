@@ -1,0 +1,41 @@
+.specialist-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.specialist-card {
+  display: flex;
+  align-items: center;
+  background-color: #f9f9f9;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.specialist-photo img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-right: 20px;
+}
+
+.specialist-info {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.specialist-position {
+  font-weight: bold;
+  color: #D79A4A;
+}
+
+.specialist-name {
+  font-size: 18px;
+}
+
+.specialist-phone {
+  color: #888;
+}

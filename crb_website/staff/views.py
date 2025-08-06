@@ -3,7 +3,7 @@ from .models import Specialist
 
 
 def specialists_list(request):
-    specialists = Specialist.objects.filter(is_active=True)
+    specialists = Specialist.objects.filter(category='general', is_active=True)
     return render(request, 'staff/specialists_list.html', {'specialists': specialists})
 
 

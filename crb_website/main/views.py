@@ -13,7 +13,6 @@ def about(request):
 
 def about_section(request, section):
     templates = {
-        'administration': 'about/administration.html',
         'departments': 'about/departments.html',
         'history': 'about/history.html',
         'trade_union': 'about/trade_union.html',
