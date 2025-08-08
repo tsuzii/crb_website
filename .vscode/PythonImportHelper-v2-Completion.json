@@ -65,6 +65,14 @@
         "documentation": {}
     },
     {
+        "label": "admin",
+        "importPath": "django.contrib",
+        "description": "django.contrib",
+        "isExtraImport": true,
+        "detail": "django.contrib",
+        "documentation": {}
+    },
+    {
         "label": "path",
         "importPath": "django.urls",
         "description": "django.urls",
@@ -74,6 +82,14 @@
     },
     {
         "label": "include",
+        "importPath": "django.urls",
+        "description": "django.urls",
+        "isExtraImport": true,
+        "detail": "django.urls",
+        "documentation": {}
+    },
+    {
+        "label": "path",
         "importPath": "django.urls",
         "description": "django.urls",
         "isExtraImport": true,
@@ -153,27 +169,11 @@
         "documentation": {}
     },
     {
-        "label": "models",
-        "importPath": "django.db",
-        "description": "django.db",
+        "label": "AppConfig",
+        "importPath": "django.apps",
+        "description": "django.apps",
         "isExtraImport": true,
-        "detail": "django.db",
-        "documentation": {}
-    },
-    {
-        "label": "migrations",
-        "importPath": "django.db",
-        "description": "django.db",
-        "isExtraImport": true,
-        "detail": "django.db",
-        "documentation": {}
-    },
-    {
-        "label": "models",
-        "importPath": "django.db",
-        "description": "django.db",
-        "isExtraImport": true,
-        "detail": "django.db",
+        "detail": "django.apps",
         "documentation": {}
     },
     {
@@ -194,14 +194,6 @@
     },
     {
         "label": "models",
-        "importPath": "django.db",
-        "description": "django.db",
-        "isExtraImport": true,
-        "detail": "django.db",
-        "documentation": {}
-    },
-    {
-        "label": "migrations",
         "importPath": "django.db",
         "description": "django.db",
         "isExtraImport": true,
@@ -234,6 +226,62 @@
     },
     {
         "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
         "importPath": "django.db",
         "description": "django.db",
         "isExtraImport": true,
@@ -294,6 +342,22 @@
         "description": "django.test",
         "isExtraImport": true,
         "detail": "django.test",
+        "documentation": {}
+    },
+    {
+        "label": "TestCase",
+        "importPath": "django.test",
+        "description": "django.test",
+        "isExtraImport": true,
+        "detail": "django.test",
+        "documentation": {}
+    },
+    {
+        "label": "render",
+        "importPath": "django.shortcuts",
+        "description": "django.shortcuts",
+        "isExtraImport": true,
+        "detail": "django.shortcuts",
         "documentation": {}
     },
     {
@@ -360,7 +424,7 @@
         "kind": 5,
         "importPath": "crb_website.crb_website.settings",
         "description": "crb_website.crb_website.settings",
-        "peekOfCode": "SECRET_KEY = config('SECRET_KEY')\n# SECURITY WARNING: don't run with debug turned on in production!\nDEBUG = config('DEBUG', default=False, cast=bool)\nALLOWED_HOSTS = ['*']\n# Application definition\nINSTALLED_APPS = [\n    'main',\n    'news',\n    'staff',\n    'django.contrib.admin',",
+        "peekOfCode": "SECRET_KEY = config('SECRET_KEY')\n# SECURITY WARNING: don't run with debug turned on in production!\nDEBUG = config('DEBUG', default=False, cast=bool)\nALLOWED_HOSTS = ['*']\n# Application definition\nINSTALLED_APPS = [\n    'main',\n    'news',\n    'staff',\n    'vacancies',",
         "detail": "crb_website.crb_website.settings",
         "documentation": {}
     },
@@ -369,7 +433,7 @@
         "kind": 5,
         "importPath": "crb_website.crb_website.settings",
         "description": "crb_website.crb_website.settings",
-        "peekOfCode": "DEBUG = config('DEBUG', default=False, cast=bool)\nALLOWED_HOSTS = ['*']\n# Application definition\nINSTALLED_APPS = [\n    'main',\n    'news',\n    'staff',\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',",
+        "peekOfCode": "DEBUG = config('DEBUG', default=False, cast=bool)\nALLOWED_HOSTS = ['*']\n# Application definition\nINSTALLED_APPS = [\n    'main',\n    'news',\n    'staff',\n    'vacancies',\n    'django.contrib.admin',\n    'django.contrib.auth',",
         "detail": "crb_website.crb_website.settings",
         "documentation": {}
     },
@@ -378,7 +442,7 @@
         "kind": 5,
         "importPath": "crb_website.crb_website.settings",
         "description": "crb_website.crb_website.settings",
-        "peekOfCode": "ALLOWED_HOSTS = ['*']\n# Application definition\nINSTALLED_APPS = [\n    'main',\n    'news',\n    'staff',\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',",
+        "peekOfCode": "ALLOWED_HOSTS = ['*']\n# Application definition\nINSTALLED_APPS = [\n    'main',\n    'news',\n    'staff',\n    'vacancies',\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',",
         "detail": "crb_website.crb_website.settings",
         "documentation": {}
     },
@@ -387,7 +451,7 @@
         "kind": 5,
         "importPath": "crb_website.crb_website.settings",
         "description": "crb_website.crb_website.settings",
-        "peekOfCode": "INSTALLED_APPS = [\n    'main',\n    'news',\n    'staff',\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',\n    'django.contrib.messages',\n    'django.contrib.staticfiles',",
+        "peekOfCode": "INSTALLED_APPS = [\n    'main',\n    'news',\n    'staff',\n    'vacancies',\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',\n    'django.contrib.messages',",
         "detail": "crb_website.crb_website.settings",
         "documentation": {}
     },
@@ -540,7 +604,7 @@
         "kind": 5,
         "importPath": "crb_website.crb_website.urls",
         "description": "crb_website.crb_website.urls",
-        "peekOfCode": "urlpatterns = [\n    path('admin/', admin.site.urls),\n    path('', include('main.urls')),\n    path('news/', include('news.urls')),\n    path('staff/', include('staff.urls')),\n] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)\nif settings.DEBUG:\n    urlpatterns += static(settings.MEDIA_URL,\n                          document_root=settings.MEDIA_ROOT)",
+        "peekOfCode": "urlpatterns = [\n    path('admin/', admin.site.urls),\n    path('', include('main.urls')),\n    path('news/', include('news.urls')),\n    path('staff/', include('staff.urls')),\n    path('vacancies/', include('vacancies.urls')),\n] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)\nif settings.DEBUG:\n    urlpatterns += static(settings.MEDIA_URL,\n                          document_root=settings.MEDIA_ROOT)",
         "detail": "crb_website.crb_website.urls",
         "documentation": {}
     },
@@ -767,6 +831,60 @@
         "description": "crb_website.staff.views",
         "peekOfCode": "def administration_view(request):\n    admins = Specialist.objects.filter(\n        category='admin', is_active=True).order_by('order')\n    return render(request, 'staff/administration.html', {'specialists': admins})",
         "detail": "crb_website.staff.views",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "crb_website.vacancies.migrations.0001_initial",
+        "description": "crb_website.vacancies.migrations.0001_initial",
+        "peekOfCode": "class Migration(migrations.Migration):\n    initial = True\n    dependencies = [\n    ]\n    operations = [\n        migrations.CreateModel(\n            name='Vacancy',\n            fields=[\n                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),\n                ('title', models.CharField(max_length=255)),",
+        "detail": "crb_website.vacancies.migrations.0001_initial",
+        "documentation": {}
+    },
+    {
+        "label": "VacancyAdmin",
+        "kind": 6,
+        "importPath": "crb_website.vacancies.admin",
+        "description": "crb_website.vacancies.admin",
+        "peekOfCode": "class VacancyAdmin(admin.ModelAdmin):\n    list_display = ('title', 'position', 'category', 'is_active')\n    list_filter = ('category', 'is_active')",
+        "detail": "crb_website.vacancies.admin",
+        "documentation": {}
+    },
+    {
+        "label": "VacanciesConfig",
+        "kind": 6,
+        "importPath": "crb_website.vacancies.apps",
+        "description": "crb_website.vacancies.apps",
+        "peekOfCode": "class VacanciesConfig(AppConfig):\n    default_auto_field = 'django.db.models.BigAutoField'\n    name = 'vacancies'",
+        "detail": "crb_website.vacancies.apps",
+        "documentation": {}
+    },
+    {
+        "label": "Vacancy",
+        "kind": 6,
+        "importPath": "crb_website.vacancies.models",
+        "description": "crb_website.vacancies.models",
+        "peekOfCode": "class Vacancy(models.Model):\n    CATEGORY_CHOICES = [\n        ('high_med_education', 'Высшее медицинское образование'),\n        ('secondary_med_education', 'Среднее специальное медицинское образование'),\n        ('high_education', 'Высшее не медицинское образование'),\n        ('secondary_education', 'Среднее не медицинское образование'),\n        ('other', 'Другое'),\n    ]\n    title = models.CharField(max_length=255)\n    position = models.TextField(blank=True)",
+        "detail": "crb_website.vacancies.models",
+        "documentation": {}
+    },
+    {
+        "label": "urlpatterns",
+        "kind": 5,
+        "importPath": "crb_website.vacancies.urls",
+        "description": "crb_website.vacancies.urls",
+        "peekOfCode": "urlpatterns = [\n    path('', vacancies_list, name='vacancies'),\n]",
+        "detail": "crb_website.vacancies.urls",
+        "documentation": {}
+    },
+    {
+        "label": "vacancies_list",
+        "kind": 2,
+        "importPath": "crb_website.vacancies.views",
+        "description": "crb_website.vacancies.views",
+        "peekOfCode": "def vacancies_list(request):\n    # Жёсткий порядок категорий\n    category_order = [\n        'high_med_education',\n        'secondary_med_education',\n        'high_education',\n        'secondary_education',\n        'other',\n    ]\n    # Создаём словарь: {значение: метка}",
+        "detail": "crb_website.vacancies.views",
         "documentation": {}
     },
     {
