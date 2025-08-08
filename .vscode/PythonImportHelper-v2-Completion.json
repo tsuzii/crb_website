@@ -631,7 +631,7 @@
         "kind": 5,
         "importPath": "crb_website.main.urls",
         "description": "crb_website.main.urls",
-        "peekOfCode": "urlpatterns = [\n    path('', views.index, name='home'),\n    path('about/', views.about, name='about'),\n    path('about/<str:section>/', views.about_section, name='about_section'),\n    path('services/', views.services, name='services'),\n    path('contacts/', views.contacts, name='contacts'),\n    path('information/', views.information, name='information'),\n]",
+        "peekOfCode": "urlpatterns = [\n    path('', views.index, name='home'),\n    path('about/', views.about, name='about'),\n    path('about/<str:section>/', views.about_section, name='about_section'),\n    path('services/', views.services, name='services'),\n    path('contacts/', views.contacts, name='contacts'),\n    path('information/', views.information, name='information'),\n    path('information/<str:section>/',\n         views.information_section, name='information_section'),\n]",
         "detail": "crb_website.main.urls",
         "documentation": {}
     },
@@ -663,20 +663,29 @@
         "documentation": {}
     },
     {
-        "label": "services",
-        "kind": 2,
-        "importPath": "crb_website.main.views",
-        "description": "crb_website.main.views",
-        "peekOfCode": "def services(request):\n    return render(request, 'main/services.html')\ndef information(request):\n    return render(request, 'main/information.html')\ndef contacts(request):\n    return render(request, 'main/contacts.html')",
-        "detail": "crb_website.main.views",
-        "documentation": {}
-    },
-    {
         "label": "information",
         "kind": 2,
         "importPath": "crb_website.main.views",
         "description": "crb_website.main.views",
-        "peekOfCode": "def information(request):\n    return render(request, 'main/information.html')\ndef contacts(request):\n    return render(request, 'main/contacts.html')",
+        "peekOfCode": "def information(request):\n    return render(request, 'main/information.html')\ndef information_section(request, section):\n    templates = {\n        'driving_comission': 'information/driving_comission.html',\n    }\n    template = templates.get(section)\n    if template:\n        return render(request, template)\n    else:",
+        "detail": "crb_website.main.views",
+        "documentation": {}
+    },
+    {
+        "label": "information_section",
+        "kind": 2,
+        "importPath": "crb_website.main.views",
+        "description": "crb_website.main.views",
+        "peekOfCode": "def information_section(request, section):\n    templates = {\n        'driving_comission': 'information/driving_comission.html',\n    }\n    template = templates.get(section)\n    if template:\n        return render(request, template)\n    else:\n        raise Http404(\"Раздел не найден\")\ndef services(request):",
+        "detail": "crb_website.main.views",
+        "documentation": {}
+    },
+    {
+        "label": "services",
+        "kind": 2,
+        "importPath": "crb_website.main.views",
+        "description": "crb_website.main.views",
+        "peekOfCode": "def services(request):\n    return render(request, 'main/services.html')\ndef contacts(request):\n    return render(request, 'main/contacts.html')",
         "detail": "crb_website.main.views",
         "documentation": {}
     },

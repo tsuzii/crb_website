@@ -28,12 +28,24 @@ def about_section(request, section):
         raise Http404("Раздел не найден")
 
 
-def services(request):
-    return render(request, 'main/services.html')
-
-
 def information(request):
     return render(request, 'main/information.html')
+
+
+def information_section(request, section):
+    templates = {
+        'driving_comission': 'information/driving_comission.html',
+    }
+
+    template = templates.get(section)
+    if template:
+        return render(request, template)
+    else:
+        raise Http404("Раздел не найден")
+
+
+def services(request):
+    return render(request, 'main/services.html')
 
 
 def contacts(request):
