@@ -36,6 +36,7 @@ def information_section(request, section):
     templates = {
         'driving_comission': 'information/driving_comission.html',
         'palliative_care': 'information/palliative_care.html',
+        'discounted_medicines': 'information/discounted_medicines.html',
     }
 
     template = templates.get(section)

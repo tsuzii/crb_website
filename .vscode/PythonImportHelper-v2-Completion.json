@@ -667,7 +667,7 @@
         "kind": 2,
         "importPath": "crb_website.main.views",
         "description": "crb_website.main.views",
-        "peekOfCode": "def information(request):\n    return render(request, 'main/information.html')\ndef information_section(request, section):\n    templates = {\n        'driving_comission': 'information/driving_comission.html',\n        'palliative_care': 'information/palliative_care.html',\n    }\n    template = templates.get(section)\n    if template:\n        return render(request, template)",
+        "peekOfCode": "def information(request):\n    return render(request, 'main/information.html')\ndef information_section(request, section):\n    templates = {\n        'driving_comission': 'information/driving_comission.html',\n        'palliative_care': 'information/palliative_care.html',\n        'discounted_medicines': 'information/discounted_medicines.html',\n    }\n    template = templates.get(section)\n    if template:",
         "detail": "crb_website.main.views",
         "documentation": {}
     },
@@ -676,7 +676,7 @@
         "kind": 2,
         "importPath": "crb_website.main.views",
         "description": "crb_website.main.views",
-        "peekOfCode": "def information_section(request, section):\n    templates = {\n        'driving_comission': 'information/driving_comission.html',\n        'palliative_care': 'information/palliative_care.html',\n    }\n    template = templates.get(section)\n    if template:\n        return render(request, template)\n    else:\n        raise Http404(\"Раздел не найден\")",
+        "peekOfCode": "def information_section(request, section):\n    templates = {\n        'driving_comission': 'information/driving_comission.html',\n        'palliative_care': 'information/palliative_care.html',\n        'discounted_medicines': 'information/discounted_medicines.html',\n    }\n    template = templates.get(section)\n    if template:\n        return render(request, template)\n    else:",
         "detail": "crb_website.main.views",
         "documentation": {}
     },
