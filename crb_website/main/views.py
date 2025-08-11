@@ -37,6 +37,7 @@ def information_section(request, section):
         'driving_comission': 'information/driving_comission.html',
         'palliative_care': 'information/palliative_care.html',
         'discounted_medicines': 'information/discounted_medicines.html',
+        'unified_health_days': 'information/unified_health_days.html',
     }
 
     template = templates.get(section)
