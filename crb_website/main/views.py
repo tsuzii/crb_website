@@ -51,5 +51,17 @@ def services(request):
     return render(request, 'main/services.html')
 
 
+def services_section(request, section):
+    templates = {
+        'kabinet_uzi': 'services/kabinet_uzi.html',
+    }
+
+    template = templates.get(section)
+    if template:
+        return render(request, template)
+    else:
+        raise Http404("Раздел не найден")
+
+
 def contacts(request):
     return render(request, 'main/contacts.html')
