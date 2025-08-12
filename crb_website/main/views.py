@@ -53,7 +53,11 @@ def services(request):
 
 def services_section(request, section):
     templates = {
-        'kabinet_uzi': 'services/kabinet_uzi.html',
+        'kab_uzi': 'services/kab_uzi.html',
+        'kab_func_diagnostic': 'services/kab_func_diagnostic.html',
+        'kab_diagnostic_lab': 'services/kab_diagnostic_lab.html',
+        'kab_x_ray_diagnostic': 'services/kab_x_ray_diagnostic.html',
+        'kab_kt': 'services/kab_kt.html',
     }
 
     template = templates.get(section)
