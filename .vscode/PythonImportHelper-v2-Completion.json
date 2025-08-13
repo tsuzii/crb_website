@@ -685,7 +685,7 @@
         "kind": 2,
         "importPath": "crb_website.main.views",
         "description": "crb_website.main.views",
-        "peekOfCode": "def services(request):\n    return render(request, 'main/services.html')\ndef services_section(request, section):\n    templates = {\n        'kab_uzi': 'services/kab_uzi.html',\n        'kab_func_diagnostic': 'services/kab_func_diagnostic.html',\n        'kab_diagnostic_lab': 'services/kab_diagnostic_lab.html',\n        'kab_x_ray_diagnostic': 'services/kab_x_ray_diagnostic.html',\n        'kab_kt': 'services/kab_kt.html',\n    }",
+        "peekOfCode": "def services(request):\n    return render(request, 'main/services.html')\ndef services_section(request, section):\n    templates = {\n        'kab_uzi': 'services/kab_uzi.html',\n        'kab_func_diagnostic': 'services/kab_func_diagnostic.html',\n        'kab_ endoscopy': 'services/kab_ endoscopy.html',\n        'kab_diagnostic_lab': 'services/kab_diagnostic_lab.html',\n        'kab_x_ray_diagnostic': 'services/kab_x_ray_diagnostic.html',\n        'kab_kt': 'services/kab_kt.html',",
         "detail": "crb_website.main.views",
         "documentation": {}
     },
@@ -694,7 +694,7 @@
         "kind": 2,
         "importPath": "crb_website.main.views",
         "description": "crb_website.main.views",
-        "peekOfCode": "def services_section(request, section):\n    templates = {\n        'kab_uzi': 'services/kab_uzi.html',\n        'kab_func_diagnostic': 'services/kab_func_diagnostic.html',\n        'kab_diagnostic_lab': 'services/kab_diagnostic_lab.html',\n        'kab_x_ray_diagnostic': 'services/kab_x_ray_diagnostic.html',\n        'kab_kt': 'services/kab_kt.html',\n    }\n    template = templates.get(section)\n    if template:",
+        "peekOfCode": "def services_section(request, section):\n    templates = {\n        'kab_uzi': 'services/kab_uzi.html',\n        'kab_func_diagnostic': 'services/kab_func_diagnostic.html',\n        'kab_ endoscopy': 'services/kab_ endoscopy.html',\n        'kab_diagnostic_lab': 'services/kab_diagnostic_lab.html',\n        'kab_x_ray_diagnostic': 'services/kab_x_ray_diagnostic.html',\n        'kab_kt': 'services/kab_kt.html',\n    }\n    template = templates.get(section)",
         "detail": "crb_website.main.views",
         "documentation": {}
     },

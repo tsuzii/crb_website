@@ -55,6 +55,7 @@ def services_section(request, section):
     templates = {
         'kab_uzi': 'services/kab_uzi.html',
         'kab_func_diagnostic': 'services/kab_func_diagnostic.html',
+        'kab_ endoscopy': 'services/kab_ endoscopy.html',
         'kab_diagnostic_lab': 'services/kab_diagnostic_lab.html',
         'kab_x_ray_diagnostic': 'services/kab_x_ray_diagnostic.html',
         'kab_kt': 'services/kab_kt.html',
