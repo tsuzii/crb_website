@@ -631,7 +631,7 @@
         "kind": 5,
         "importPath": "crb_website.main.urls",
         "description": "crb_website.main.urls",
-        "peekOfCode": "urlpatterns = [\n    path('', views.index, name='home'),\n    path('about/', views.about, name='about'),\n    path('about/<str:section>/', views.about_section, name='about_section'),\n    path('services/', views.services, name='services'),\n    path('contacts/', views.contacts, name='contacts'),\n    path('information/', views.information, name='information'),\n    path('information/<str:section>/',\n         views.information_section, name='information_section'),\n]",
+        "peekOfCode": "urlpatterns = [\n    path('', views.index, name='home'),\n    path('about/', views.about, name='about'),\n    path('about/<str:section>/', views.about_section, name='about_section'),\n    path('services/', views.services, name='services'),\n    path('services/<str:section>/',\n         views.services_section, name='services_section'),\n    path('contacts/', views.contacts, name='contacts'),\n    path('information/', views.information, name='information'),\n    path('information/<str:section>/',",
         "detail": "crb_website.main.urls",
         "documentation": {}
     },
@@ -667,7 +667,7 @@
         "kind": 2,
         "importPath": "crb_website.main.views",
         "description": "crb_website.main.views",
-        "peekOfCode": "def information(request):\n    return render(request, 'main/information.html')\ndef information_section(request, section):\n    templates = {\n        'driving_comission': 'information/driving_comission.html',\n        'palliative_care': 'information/palliative_care.html',\n        'discounted_medicines': 'information/discounted_medicines.html',\n    }\n    template = templates.get(section)\n    if template:",
+        "peekOfCode": "def information(request):\n    return render(request, 'main/information.html')\ndef information_section(request, section):\n    templates = {\n        'driving_comission': 'information/driving_comission.html',\n        'palliative_care': 'information/palliative_care.html',\n        'discounted_medicines': 'information/discounted_medicines.html',\n        'unified_health_days': 'information/unified_health_days.html',\n    }\n    template = templates.get(section)",
         "detail": "crb_website.main.views",
         "documentation": {}
     },
@@ -676,7 +676,7 @@
         "kind": 2,
         "importPath": "crb_website.main.views",
         "description": "crb_website.main.views",
-        "peekOfCode": "def information_section(request, section):\n    templates = {\n        'driving_comission': 'information/driving_comission.html',\n        'palliative_care': 'information/palliative_care.html',\n        'discounted_medicines': 'information/discounted_medicines.html',\n    }\n    template = templates.get(section)\n    if template:\n        return render(request, template)\n    else:",
+        "peekOfCode": "def information_section(request, section):\n    templates = {\n        'driving_comission': 'information/driving_comission.html',\n        'palliative_care': 'information/palliative_care.html',\n        'discounted_medicines': 'information/discounted_medicines.html',\n        'unified_health_days': 'information/unified_health_days.html',\n    }\n    template = templates.get(section)\n    if template:\n        return render(request, template)",
         "detail": "crb_website.main.views",
         "documentation": {}
     },
@@ -685,7 +685,16 @@
         "kind": 2,
         "importPath": "crb_website.main.views",
         "description": "crb_website.main.views",
-        "peekOfCode": "def services(request):\n    return render(request, 'main/services.html')\ndef contacts(request):\n    return render(request, 'main/contacts.html')",
+        "peekOfCode": "def services(request):\n    return render(request, 'main/services.html')\ndef services_section(request, section):\n    templates = {\n        'kab_uzi': 'services/kab_uzi.html',\n        'kab_func_diagnostic': 'services/kab_func_diagnostic.html',\n        'kab_diagnostic_lab': 'services/kab_diagnostic_lab.html',\n        'kab_x_ray_diagnostic': 'services/kab_x_ray_diagnostic.html',\n        'kab_kt': 'services/kab_kt.html',\n    }",
+        "detail": "crb_website.main.views",
+        "documentation": {}
+    },
+    {
+        "label": "services_section",
+        "kind": 2,
+        "importPath": "crb_website.main.views",
+        "description": "crb_website.main.views",
+        "peekOfCode": "def services_section(request, section):\n    templates = {\n        'kab_uzi': 'services/kab_uzi.html',\n        'kab_func_diagnostic': 'services/kab_func_diagnostic.html',\n        'kab_diagnostic_lab': 'services/kab_diagnostic_lab.html',\n        'kab_x_ray_diagnostic': 'services/kab_x_ray_diagnostic.html',\n        'kab_kt': 'services/kab_kt.html',\n    }\n    template = templates.get(section)\n    if template:",
         "detail": "crb_website.main.views",
         "documentation": {}
     },
