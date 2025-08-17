@@ -36,6 +36,7 @@ INSTALLED_APPS = [
     'news',
     'staff',
     'vacancies',
+    'schedule',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
