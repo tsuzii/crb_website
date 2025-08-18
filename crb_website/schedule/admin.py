@@ -7,11 +7,13 @@ class ScheduleAdmin(admin.ModelAdmin):
     list_display = (
         "name",
         "speciality",
+        "location",   # добавил поле место приёма
         "monday",
         "tuesday",
         "wednesday",
         "thursday",
         "friday",
     )
-    list_filter = ("speciality",)  # фильтрация по специальности
+    # фильтрация по специальности и месту приёма
+    list_filter = ("speciality", "location")
     search_fields = ("name", "speciality")  # поиск по ФИО и специальности
