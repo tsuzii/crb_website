@@ -15,7 +15,7 @@
       <thead>
         <tr>
           <th>Ф.И.О.</th>
-          <th>Номер участка</th>
+          <th>Должность</th>
           <th>Понедельник</th>
           <th>Вторник</th>
           <th>Среда</th>
@@ -24,10 +24,10 @@
         </tr>
       </thead>
       <tbody>
-        {% for s in specialists %}
+        {% for s in schedules %}
         <tr>
-          <td>{{ s.name }}</td>
-          <td>{{ s.speciality }}</td>
+          <td>{{ s.specialist.name }}</td>
+          <td>{{ s.specialist.position }}</td>
           <td>{{ s.monday|default:"—" }}</td>
           <td>{{ s.tuesday|default:"—" }}</td>
           <td>{{ s.wednesday|default:"—" }}</td>
@@ -36,10 +36,50 @@
         </tr>
         {% empty %}
         <tr>
-          <td colspan="9">Нет данных о расписании</td>
+          <td colspan="7">Нет данных о расписании</td>
         </tr>
         {% endfor %}
       </tbody>
     </table>
   </div>
 {% endblock %}
+
+{% comment %} <h2>Участковые терапевты</h2>
+<table>
+  {% for s in schedules %}
+    {% if s.location == "district" %}
+      <tr>
+        <td>{{ s.name }}</td>
+        <td>{{ s.speciality }}</td>
+        <td>{{ s.monday }}</td>
+        ...
+      </tr>
+    {% endif %}
+  {% endfor %}
+</table>
+
+<h2>Специалисты поликлиники</h2>
+<table>
+  {% for s in schedules %}
+    {% if s.location == "polyclinic" %}
+      <tr>
+        <td>{{ s.name }}</td>
+        <td>{{ s.speciality }}</td>
+        ...
+      </tr>
+    {% endif %}
+  {% endfor %}
+</table>
+
+<h2>Специалисты других учреждений</h2>
+<table>
+  {% for s in schedules %}
+    {% if s.location == "other" %}
+      <tr>
+        <td>{{ s.name }}</td>
+        <td>{{ s.speciality }}</td>
+        ...
+      </tr>
+    {% endif %}
+  {% endfor %}
+</table> {% endcomment %}

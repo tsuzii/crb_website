@@ -3,5 +3,5 @@ from .models import Schedule
 
 
 def schedule_list(request):
-    specialists = Schedule.objects.all()
-    return render(request, "schedule/schedule_list.html", {"specialists": specialists})
+    schedules = Schedule.objects.select_related("specialist").all()
+    return render(request, "schedule/schedule_list.html", {"schedules": schedules})
