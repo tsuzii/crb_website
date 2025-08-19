@@ -10,6 +10,7 @@ class Specialist(models.Model):
 
     name = models.CharField(max_length=255)
     position = models.CharField(max_length=255)
+    num_cabinet = models.CharField(max_length=10, blank=True)
     photo = models.ImageField(upload_to='staff_photos/', blank=True, null=True)
     bio = models.TextField(blank=True)
     is_active = models.BooleanField(default=True)
