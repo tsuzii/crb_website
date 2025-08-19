@@ -4,7 +4,8 @@ from django.db import models
 class Specialist(models.Model):
     CATEGORY_CHOICES = [
         ('admin', 'Администрация'),
-        ('general', 'Общий специалист'),
+        ('general', 'Специалисты на странице "Специалисты"'),
+        ('schedule_specialists', 'Специалисты в графике приёма'),
     ]
 
     name = models.CharField(max_length=255)

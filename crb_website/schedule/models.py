@@ -1,5 +1,5 @@
 from django.db import models
-from staff.models import Specialist   # импортируем модель специалиста
+from staff.models import Specialist
 
 
 class Schedule(models.Model):

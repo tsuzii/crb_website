@@ -9,7 +9,40 @@
   <link rel="stylesheet" href="{% static 'main/css/about.css' %}">
 
   <div class="about-container">
-    <h1>Расписание специалистов</h1>
+    <h1>График приема участковых врачей общей практики</h1>
+
+    <table class="schedule-table">
+      <thead>
+        <tr>
+          <th>Ф.И.О.</th>
+          <th>Номер участка</th>
+          <th>Понедельник</th>
+          <th>Вторник</th>
+          <th>Среда</th>
+          <th>Четверг</th>
+          <th>Пятница</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for s in therapist_schedules %}
+            <tr>
+              <td>{{ s.specialist.name }}</td>
+              <td>{{ s.specialist.position }}</td>
+              <td>{{ s.monday|default:"—" }}</td>
+              <td>{{ s.tuesday|default:"—" }}</td>
+              <td>{{ s.wednesday|default:"—" }}</td>
+              <td>{{ s.thursday|default:"—" }}</td>
+              <td>{{ s.friday|default:"—" }}</td>
+            </tr>
+              {% empty %}
+            <tr>
+              <td colspan="7">Нет данных о расписании</td>
+            </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+
+    <h1>График приема участковых педиатров</h1>
 
     <table class="schedule-table">
       <thead>
@@ -24,20 +57,21 @@
         </tr>
       </thead>
       <tbody>
-        {% for s in schedules %}
-        <tr>
-          <td>{{ s.specialist.name }}</td>
-          <td>{{ s.specialist.position }}</td>
-          <td>{{ s.monday|default:"—" }}</td>
-          <td>{{ s.tuesday|default:"—" }}</td>
-          <td>{{ s.wednesday|default:"—" }}</td>
-          <td>{{ s.thursday|default:"—" }}</td>
-          <td>{{ s.friday|default:"—" }}</td>
-        </tr>
-        {% empty %}
-        <tr>
-          <td colspan="7">Нет данных о расписании</td>
-        </tr>
+        {% for s in pediatrician_schedules %}
+            <tr>
+              <td>{{ s.specialist.name }}</td>
+              <td>{{ s.specialist.position }}</td>
+              <td>{{ s.monday|default:"—" }}</td>
+              <td>{{ s.tuesday|default:"—" }}</td>
+              <td>{{ s.wednesday|default:"—" }}</td>
+              <td>{{ s.thursday|default:"—" }}</td>
+              <td>{{ s.friday|default:"—" }}</td>
+            </tr>
+            {% empty %}
+            <tr>
+              <td colspan="7">Нет данных о расписании</td>
+            </tr>
+        
         {% endfor %}
       </tbody>
     </table>
@@ -47,7 +81,7 @@
 {% comment %} <h2>Участковые терапевты</h2>
 <table>
   {% for s in schedules %}
-    {% if s.location == "district" %}
+    {% if s.location == "therapists" %}
       <tr>
         <td>{{ s.name }}</td>
         <td>{{ s.speciality }}</td>
