@@ -9,6 +9,9 @@
   <link rel="stylesheet" href="{% static 'main/css/about.css' %}">
 
   <div class="about-container">
+    <h2>В расписании возможны изменения!</h2>
+    <h2>Уточняйте график приема в регистратуре по телефону <a href="tel:80177255733">55-7-33</a>.</h2>
+    <h2>Талон к врачу-специалисту можно заказать на сайте <a href="https://talon.by/policlinic/volozhin/order">talon.by</a> либо по телефону <a href="tel:80177255733">55-7-33</a></h2>
     <h1>График приема участковых врачей общей практики</h1>
 
     <table class="schedule-table">
@@ -48,7 +51,83 @@
       <thead>
         <tr>
           <th>Ф.И.О.</th>
-          <th>Должность</th>
+          <th>№ участка</th>
+          <th>Понедельник</th>
+          <th>Вторник</th>
+          <th>Среда</th>
+          <th>Четверг</th>
+          <th>Пятница</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for s in pediatrician_schedules %}
+            <tr>
+              <td>{{ s.specialist.name }}</td>
+              <td>{{ s.specialist.position }}</td>
+              <td>{{ s.monday|default:"—" }}</td>
+              <td>{{ s.tuesday|default:"—" }}</td>
+              <td>{{ s.wednesday|default:"—" }}</td>
+              <td>{{ s.thursday|default:"—" }}</td>
+              <td>{{ s.friday|default:"—" }}</td>
+            </tr>
+            {% empty %}
+            <tr>
+              <td colspan="7">Нет данных о расписании</td>
+            </tr>
+        
+        {% endfor %}
+      </tbody>
+    </table>
+
+    <h1>График приема врачей специалистов</h1>
+
+    <table class="schedule-table">
+      <thead>
+        <tr>
+          <th>Ф.И.О.</th>
+          <th>Специальность</th>
+          <th>Понедельник</th>
+          <th>Вторник</th>
+          <th>Среда</th>
+          <th>Четверг</th>
+          <th>Пятница</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for s in pediatrician_schedules %}
+            <tr>
+              <td>{{ s.specialist.name }}</td>
+              <td>{{ s.specialist.position }}</td>
+              <td>{{ s.monday|default:"—" }}</td>
+              <td>{{ s.tuesday|default:"—" }}</td>
+              <td>{{ s.wednesday|default:"—" }}</td>
+              <td>{{ s.thursday|default:"—" }}</td>
+              <td>{{ s.friday|default:"—" }}</td>
+            </tr>
+            {% empty %}
+            <tr>
+              <td colspan="7">Нет данных о расписании</td>
+            </tr>
+        
+        {% endfor %}
+      </tbody>
+    </table>
+    <h2>Уважаемые пациенты! В связи с ремонтными работами в районной поликлинике возможны изменения в нумерации кабинетов</h2>
+    <p>Медицинские осмотры врачей окулиста, ЛОР-врача, невролога : на трудоустройство (предварительные и периодические), на оружие, на поступление, на опеку и попечительство будут проводиться по графику:</p>
+    <p>Понедельник 10.00-12.00</p>
+    <p>Вторник 10.00-12.00 15.00-15-45</p>
+    <p>Среда 10.00-12.00</p>
+    <p>Четверг 10.00-12.00 15.00-15.30</p>
+    <p>Пятница 10.00-11.00 15.00-16.00</p>
+    <p>Осмотр врача общей практики (терапевта) проводится по талону по предварительной записи.</p>
+
+    <h1>График работы Ивенецкой горпоселковой больницы(ГПБ)</h1>
+
+    <table class="schedule-table">
+      <thead>
+        <tr>
+          <th>Ф.И.О.</th>
+          <th>Специальность</th>
           <th>Понедельник</th>
           <th>Вторник</th>
           <th>Среда</th>
