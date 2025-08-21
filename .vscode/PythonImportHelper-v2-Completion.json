@@ -257,22 +257,6 @@
         "documentation": {}
     },
     {
-        "label": "migrations",
-        "importPath": "django.db",
-        "description": "django.db",
-        "isExtraImport": true,
-        "detail": "django.db",
-        "documentation": {}
-    },
-    {
-        "label": "models",
-        "importPath": "django.db",
-        "description": "django.db",
-        "isExtraImport": true,
-        "detail": "django.db",
-        "documentation": {}
-    },
-    {
         "label": "models",
         "importPath": "django.db",
         "description": "django.db",
@@ -362,6 +346,38 @@
     },
     {
         "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
         "importPath": "django.db",
         "description": "django.db",
         "isExtraImport": true,
@@ -486,6 +502,23 @@
         "description": "django.http",
         "isExtraImport": true,
         "detail": "django.http",
+        "documentation": {}
+    },
+    {
+        "label": "django.db.models.deletion",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "django.db.models.deletion",
+        "description": "django.db.models.deletion",
+        "detail": "django.db.models.deletion",
+        "documentation": {}
+    },
+    {
+        "label": "Specialist",
+        "importPath": "staff.models",
+        "description": "staff.models",
+        "isExtraImport": true,
+        "detail": "staff.models",
         "documentation": {}
     },
     {
@@ -862,17 +895,8 @@
         "kind": 6,
         "importPath": "crb_website.schedule.migrations.0001_initial",
         "description": "crb_website.schedule.migrations.0001_initial",
-        "peekOfCode": "class Migration(migrations.Migration):\n    initial = True\n    dependencies = [\n    ]\n    operations = [\n        migrations.CreateModel(\n            name='Schedule',\n            fields=[\n                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),\n                ('name', models.CharField(max_length=100, verbose_name='Ф.И.О. сотрудника')),",
+        "peekOfCode": "class Migration(migrations.Migration):\n    initial = True\n    dependencies = [\n        ('staff', '0006_alter_specialist_options'),\n    ]\n    operations = [\n        migrations.CreateModel(\n            name='Schedule',\n            fields=[\n                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),",
         "detail": "crb_website.schedule.migrations.0001_initial",
-        "documentation": {}
-    },
-    {
-        "label": "Migration",
-        "kind": 6,
-        "importPath": "crb_website.schedule.migrations.0002_schedule_location",
-        "description": "crb_website.schedule.migrations.0002_schedule_location",
-        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('schedule', '0001_initial'),\n    ]\n    operations = [\n        migrations.AddField(\n            model_name='schedule',\n            name='location',\n            field=models.CharField(choices=[('therapists', 'Терапевтическая участковая служба'), ('pediatricians', 'Педиатрическая участковая служба'), ('polyclinic', 'Поликлиника'), ('ivenec', 'Ивенецкая горпоселковая больница'), ('rakov', 'Раковская участковая больница')], default='polyclinic', max_length=20, verbose_name='Место приёма'),\n        ),",
-        "detail": "crb_website.schedule.migrations.0002_schedule_location",
         "documentation": {}
     },
     {
@@ -880,7 +904,7 @@
         "kind": 6,
         "importPath": "crb_website.schedule.admin",
         "description": "crb_website.schedule.admin",
-        "peekOfCode": "class ScheduleAdmin(admin.ModelAdmin):\n    list_display = (\n        \"name\",\n        \"speciality\",\n        \"location\",   # добавил поле место приёма\n        \"monday\",\n        \"tuesday\",\n        \"wednesday\",\n        \"thursday\",\n        \"friday\",",
+        "peekOfCode": "class ScheduleAdmin(admin.ModelAdmin):\n    list_display = (\n        \"get_name\",\n        \"get_speciality\",\n        \"location\",\n        \"monday\",\n        \"tuesday\",\n        \"wednesday\",\n        \"thursday\",\n        \"friday\",",
         "detail": "crb_website.schedule.admin",
         "documentation": {}
     },
@@ -898,7 +922,7 @@
         "kind": 6,
         "importPath": "crb_website.schedule.models",
         "description": "crb_website.schedule.models",
-        "peekOfCode": "class Schedule(models.Model):\n    class Location(models.TextChoices):\n        DISTRICT_THERAPISTS = \"therapists\", \"Терапевтическая участковая служба\"\n        DISTRICT_PEDIATRICIANS = \"pediatricians\", \"Педиатрическая участковая служба\"\n        POLYCLINIC = \"polyclinic\", \"Поликлиника\"\n        IVENEC = \"ivenec\", \"Ивенецкая горпоселковая больница\"\n        RAKOV = \"rakov\", \"Раковская участковая больница\"\n    name = models.CharField('Ф.И.О. сотрудника', max_length=100)\n    speciality = models.CharField('Специальность', max_length=100)\n    location = models.CharField(",
+        "peekOfCode": "class Schedule(models.Model):\n    class Location(models.TextChoices):\n        DISTRICT_THERAPISTS = \"therapists\", \"Терапевтическая участковая служба\"\n        DISTRICT_PEDIATRICIANS = \"pediatricians\", \"Педиатрическая участковая служба\"\n        POLYCLINIC = \"polyclinic\", \"Поликлиника\"\n        IVENEC = \"ivenec\", \"Ивенецкая горпоселковая больница\"\n        RAKOV = \"rakov\", \"Раковская участковая больница\"\n    specialist = models.OneToOneField(\n        Specialist,\n        on_delete=models.CASCADE,",
         "detail": "crb_website.schedule.models",
         "documentation": {}
     },
@@ -916,7 +940,7 @@
         "kind": 2,
         "importPath": "crb_website.schedule.views",
         "description": "crb_website.schedule.views",
-        "peekOfCode": "def schedule_list(request):\n    specialists = Schedule.objects.all()\n    return render(request, \"schedule/schedule_list.html\", {\"specialists\": specialists})",
+        "peekOfCode": "def schedule_list(request):\n    schedules = Schedule.objects.select_related(\"specialist\")\n    context = {\n        \"therapist_schedules\": schedules.filter(location=\"therapists\"),\n        \"pediatrician_schedules\": schedules.filter(location=\"pediatricians\"),\n        \"polyclinic_schedules\": schedules.filter(location=\"polyclinic\"),\n        \"ivenec_schedules\": schedules.filter(location=\"ivenec\"),\n        \"rakov_schedules\": schedules.filter(location=\"rakov\"),\n    }\n    return render(request, \"schedule/schedule_list.html\", context)",
         "detail": "crb_website.schedule.views",
         "documentation": {}
     },
@@ -975,6 +999,24 @@
         "documentation": {}
     },
     {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "crb_website.staff.migrations.0007_alter_specialist_category",
+        "description": "crb_website.staff.migrations.0007_alter_specialist_category",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('staff', '0006_alter_specialist_options'),\n    ]\n    operations = [\n        migrations.AlterField(\n            model_name='specialist',\n            name='category',\n            field=models.CharField(choices=[('admin', 'Администрация'), ('general', 'Специалисты на странице \"Специалисты\"'), ('schedule_specialists', 'Специалисты в графике приёма')], default='general', max_length=20),\n        ),",
+        "detail": "crb_website.staff.migrations.0007_alter_specialist_category",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "crb_website.staff.migrations.0008_specialist_num_cabinet",
+        "description": "crb_website.staff.migrations.0008_specialist_num_cabinet",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('staff', '0007_alter_specialist_category'),\n    ]\n    operations = [\n        migrations.AddField(\n            model_name='specialist',\n            name='num_cabinet',\n            field=models.CharField(blank=True, max_length=10),\n        ),",
+        "detail": "crb_website.staff.migrations.0008_specialist_num_cabinet",
+        "documentation": {}
+    },
+    {
         "label": "SpecialistAdmin",
         "kind": 6,
         "importPath": "crb_website.staff.admin",
@@ -997,7 +1039,7 @@
         "kind": 6,
         "importPath": "crb_website.staff.models",
         "description": "crb_website.staff.models",
-        "peekOfCode": "class Specialist(models.Model):\n    CATEGORY_CHOICES = [\n        ('admin', 'Администрация'),\n        ('general', 'Общий специалист'),\n    ]\n    name = models.CharField(max_length=255)\n    position = models.CharField(max_length=255)\n    photo = models.ImageField(upload_to='staff_photos/', blank=True, null=True)\n    bio = models.TextField(blank=True)\n    is_active = models.BooleanField(default=True)",
+        "peekOfCode": "class Specialist(models.Model):\n    CATEGORY_CHOICES = [\n        ('admin', 'Администрация'),\n        ('general', 'Специалисты на странице \"Специалисты\"'),\n        ('schedule_specialists', 'Специалисты в графике приёма'),\n    ]\n    name = models.CharField(max_length=255)\n    position = models.CharField(max_length=255)\n    num_cabinet = models.CharField(max_length=10, blank=True)\n    photo = models.ImageField(upload_to='staff_photos/', blank=True, null=True)",
         "detail": "crb_website.staff.models",
         "documentation": {}
     },
